@@ -6,7 +6,7 @@
 		p.p Станок с модулем взрывной накачки: Монтажная консоль отклоняется в сторону вручную. Стойка со шлангом накачки и точным манометром. Диапазон зажима изнутри/снаружи 14-26"/12-23". Макс. ширина колеса 16". Макс. диаметр колеса 1143 мм. Усилие отжима 2500 кг.
 		p.p-13 Мелкий текст: Предназначен для монтажа и демонтажа колес легковых автомобилей, мотоциклов и легких грузовиков с диаметром обода до 21 дюйма (535 мм) и шириной до 13 дюймов (330 мм). Надежный и неприхотливый станок в традиционном исполнении. Прочная и безопасная конструкия обеспечивает долговременную безотказную работу станка. Поворотная консоль позволяет устанавливать шиномонтажный станок непосредственно у стены, давая возможность экономить рабочее пространство. Рабочий стол с самоцентрнирующимся 4-х кулачковым патроном и двумя силовыми пневмоцилиндрами вращается в обе стороны. Мощный отжимающий пневмоцилиндр и лопатка со специальным профилем позволяют быстро и бережно произвести демонтаж. Монтажная головка выставляется относительно обода по высоте и по горизонтали. Её форма подходит для всех видов шин. В блок подготовки воздуха входят: фильтр, влагоотделитель, регулятор давления, манометр, лубрикатор. В качестве опций доступны пластиковые накладки на монтажную голловку и кулачки.
 		.alert.text-graphite-gray
-			svg.alert__icon.fill-carmine-pink(width="30" height="30"): use(xlink:href="#exclamation-mark")
+			svg.alert__icon.fill-carmine-pink(width="30" height="30"): use(href="#exclamation-mark")
 			.alert__body
 				.alert__title.text-500 Важно. Заголовок
 				.alert__desc.text-granite Обычный текст: Полуавтоматический шиномонтажный станок с модулем взрывной накачки. 
@@ -42,7 +42,7 @@
 		.spoiler(style="margin-bottom: 25px")
 			header.spoiler__header.text-500.text-granite.paper-yellow
 				.spoiler__title Спойлер Заголовок
-				svg.spoiler__union.icon.text-purple(width="8" height="5"): use(xlink:href="#union")
+				svg.spoiler__union.icon.text-purple(width="8" height="5"): use(href="#union")
 			.spoiler__content.hidden
 				p.p.offset-0 Спойлер обычный текст
 		
@@ -125,8 +125,10 @@
 						.swiper-slide: img.image-full(src="images/gallery/2.jpg" width="240" height="160" alt="Фото")
 						.swiper-slide: img.image-full(src="images/gallery/3.jpg" width="240" height="160" alt="Фото")
 						.swiper-slide: img.image-full(src="images/gallery/4.jpg" width="240" height="160" alt="Фото")
-				svg.gallery-slider__prev.swiper-button-prev.important(width="40" height="40"): use(xlink:href="#prev")
-				svg.gallery-slider__next.swiper-button-next.important(width="40" height="40"): use(xlink:href="#next")
+				button.slider-button.gallery-slider__prev
+					svg.slider-button__icon(width="40" height="40"): use(href="#prev")
+				button.slider-button.gallery-slider__next
+					svg.slider-button__icon(width="40" height="40"): use(href="#next")
 					
 				
 		//- 	.g-gallery: each gallery in [1,2,3,4,5,6,7,8]

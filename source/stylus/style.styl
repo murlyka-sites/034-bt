@@ -38,6 +38,22 @@
 		position relative
 		padding 0 50px
 	}
+	
+	&__prev,
+	&__next {
+		position absolute
+		top 50%
+		transform translate(0, -50%)
+		z-index 25
+	}
+	
+	&__prev {
+		left 0
+	}
+	
+	&__next {
+		right 0
+	}
 }
 
 .page {
@@ -2062,7 +2078,38 @@
 		margin-right 8px
 	}
 }
+
 */
+
+.slider-button {
+	padding 0
+	border 1px solid transparent
+	border-radius 50%
+	overlow hidden
+	background transparent
+	box-shadow 0px 7px 20px rgba(235, 87, 87, 0.1)
+	fill #4D4D54
+	
+	&:hover {
+		box-shadow 0px 7px 20px rgba(235, 87, 87, 0.25)
+	}
+	
+	&:active {
+		box-shadow none
+		border-color #FBE2E2
+	}
+	
+	&_disabled {
+		display none
+	}
+	
+	&__icon {
+		display block
+		border-radius 50%
+		overlow hidden
+	}
+}
+
 .hidden {
 	display none
 }

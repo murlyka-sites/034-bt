@@ -22,8 +22,9 @@ $('.gallery-slider').each(function() {
 			touchRatio: 0.2,
 			allowTouchMove: false,
 			navigation: {
-				prevEl: this.querySelector('.swiper-button-prev'),
-				nextEl: this.querySelector('.swiper-button-next')
+				prevEl: this.querySelector('.gallery-slider__prev'),
+				nextEl: this.querySelector('.gallery-slider__next'),
+				disabledClass: 'slider-button_disabled'
 			},
 			breakpoints: {
 				480: {
