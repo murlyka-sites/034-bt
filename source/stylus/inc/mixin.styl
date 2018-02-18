@@ -1,0 +1,16 @@
+line-clamp($line, $line-height) {
+	display -webkit-box
+	overflow hidden
+	text-overflow ellipsis
+	max-height ($line * $line-height)
+	-webkit-line-clamp $line
+	-webkit-box-orient vertical
+}
+
+container() {
+	max-width 1120px
+	padding-left 10px 
+	padding-right 10px
+	margin-left auto
+	margin-right auto
+}

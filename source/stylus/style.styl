@@ -1,0 +1,1948 @@
+@import "inc/variables"
+@import "inc/mixin"
+@import "inc/typo"
+// @import "inc/text"
+@import "inc/paper"
+// @import "inc/card"
+// @import "inc/section"
+// @import "inc/w"
+// @import "inc/offset"
+@import "inc/swiper"
+// @import "inc/iCheck"
+// @import "inc/ion-rangeSlider"
+
+*,
+*::after,
+*::before {
+	box-sizing border-box
+}
+
+
+
+.gallery-slider {
+	&__pr {
+		margin-bottom 5px
+
+		@media (min-width 480px) {
+			margin-bottom 10px
+		}
+	}
+
+	&__thumbs {
+		position relative
+		padding 0 50px
+	}
+}
+
+.page {
+	font-family 'Istok Web', sans-serif;
+}
+
+.t2 {
+	font-size 30px	
+	margin 0
+}
+
+.phone {
+	font-size 18px 
+	font-weight 700
+}
+
+.contact {
+	
+}
+
+
+.s-top {
+	background #282C23
+	color white
+	
+	&__container {
+		display grid
+		grid-template-columns auto
+		justify-content flex-start
+		align-items center
+		grid-gap 5px
+		padding 5px 0
+		
+		@media (min-width 600px) {
+			grid-template-columns auto auto
+			justify-content flex-end
+		}
+		
+		container()
+	}
+}
+
+.fill-currentColor {
+	fill currentColor
+}
+
+.fill-yellow{
+	fill $color-yellow
+}
+
+.address {
+	display inline-grid
+	grid-template-columns auto auto
+	grid-gap 6px
+	font-size 11px
+	
+	&__link {
+		color inherit
+		text-decoration-style dashed
+		
+		&:hover {
+			text-decoration none
+		}
+	}
+}
+
+.s-header {
+	&__container {
+		display grid
+		grid-gap 10px
+		grid-template-columns auto auto
+		justify-content space-between		
+		align-items center
+		padding 15px
+		background linear-gradient(0deg, #FFFFFF, #FFFFFF), #F2F4F8
+		
+		@media (min-width 600px) {
+			grid-template-areas '. .' 'nav nav'	
+			grid-template-columns auto 175px
+		}
+		
+		@media (min-width 992px) {
+			grid-template-areas unset
+			grid-template-columns auto auto auto
+		}
+		
+		container()
+	}
+	
+	&__column {
+		
+		&_burger {
+			display block
+			
+			@media (min-width 600px) {
+				display none
+			}
+		}
+		&_logo {
+		}
+		
+		&_nav {
+			display none
+			grid-area nav
+			
+			@media (min-width 600px) {
+				display block
+			}
+			
+			@media (min-width 992px) {
+				grid-area initial
+			}
+		}
+		
+		&_button {
+			display none
+			
+			@media (min-width 600px) {
+				display block
+			}
+		}
+	}
+	
+	&__burger {
+		stroke black
+		border none
+		padding 5px
+		background yellow
+	}
+}
+
+.s-foo-nav {
+	&__container {
+		padding 15px
+		
+
+		@media (min-width 480px) {
+			display grid
+			justify-content space-between
+			align-items center
+			grid-template-columns auto auto
+		}
+		
+		@media (min-width 992px) {
+			grid-template-columns auto auto auto
+		}
+		
+		container()
+	}
+	
+	&__column {
+		&_nav {
+			display none
+			
+			@media (min-width 992px) {
+				display block
+			}
+		}
+		&_contact {
+			color #282C23
+			
+			@media (min-width 480px) {
+				text-align right
+			}
+		}
+	}
+}
+
+.nav-header {
+	display flex
+	justify-content center
+	padding 0
+	margin 0
+	list-style-type none
+	font-size 12px 
+	font-weight 700 
+	text-transform uppercase
+	color #444652
+	
+	&__item {
+		margin 0 10px
+		 
+		@media (min-width 992px) {
+			margin 0 10px
+		}
+		
+		@media (min-width 1140px) {
+			margin 0 20px
+		}
+		
+	}
+	
+	&__link {
+		color inherit
+		text-decoration none
+		
+		&:hover {
+			text-decoration-line underline
+			text-decoration-style dashed
+		}
+	}
+}
+
+.s-menu-catalog {
+	&__container {
+		display grid
+		grid-template-areas 'search' 'buttons'
+		grid-template-columns 100%
+		align-items flex-start
+		justify-content space-between
+		align-items center
+		grid-gap 10px
+		padding 10px
+		
+		@media (min-width 768px) {
+			grid-template-areas 'buttons search'
+			grid-template-columns auto 275px
+		}
+		
+		@media (min-width 992px) {
+			grid-template-columns auto 365px
+		}
+		
+		container()
+	}
+	
+	&__column {
+		&_search {
+			grid-area search
+		}
+		
+		&_buttons {
+			grid-area buttons
+		}
+	}
+}
+
+.s-breadcrumbs {
+	margin-bottom 35px
+	color #444652
+	font-size 11px 
+	box-shadow inset 0px -1px 0px #E0E0E0
+	
+	&__container {
+		padding 6px 
+		container()
+	}
+	
+	&__list {
+		margin 0
+		padding 0
+		list-style-type none
+	}
+	
+	&__item {
+		display inline
+		
+		&::after {
+			content ' – '
+			color #BDBDBD
+		}
+		
+		&:last-child::after {
+			display none
+		}
+	}
+	
+	&__link {
+		text-decoration none
+		color #165070
+		
+		&:hover {
+			text-decoration underline dashed
+		}
+	}
+}
+
+.s-main-catalog {
+	padding-bottom 60px 
+	
+	&__title {
+		margin-bottom 40px 
+	}
+	
+	&__container {
+		container()
+	}
+	
+	&__grid {
+		margin-bottom 50px
+		display grid
+		grid-template-columns 1fr
+		grid-gap 10px
+		
+		@media (min-width 500px) {
+			grid-template-columns 1fr 1fr
+		}
+		
+		@media (min-width 768px) {
+		}
+		
+		@media (min-width 992px) {
+			grid-template-columns 1fr 1fr 1fr
+		grid-gap 25px 20px
+		}
+	}
+}
+
+.s-map-of-services {
+	
+	&__container {
+		padding 30px
+		color #1E1A08
+		
+		@media (min-width 600px) {
+			display grid
+			align-items center
+			grid-template-columns 1fr 1fr
+			grid-gap 20px
+		}
+		
+		@media (min-width 992px) {
+			grid-template-columns 1fr 1fr 1fr
+			grid-gap 25px	
+		}
+		
+		container()
+	}
+	
+	&__item {
+		padding-bottom 10px 
+		
+		@media (min-width 600px) {
+			padding-bottom 0
+		}
+	}
+	
+	&__link {
+		text-decoration none
+		color inherit
+		
+		&:hover {
+			text-decoration underline dashed
+		}
+	}
+}
+
+.c-catalog {
+	background white
+	padding 20px
+	border 1px solid #E8E8E8
+	border-radius 15px
+	overflow hidden
+	
+	&__header {
+		padding 10px 
+	}
+	
+	&__body {
+		padding 10px 0
+		text-align center
+		padding-bottom 10px 
+		
+	}
+	
+	&__title {
+		margin 0 -5px 10px
+		color #4D4D54
+		font-size 15px 
+		line-height 1.3
+		
+		&-inner {
+			color inherit
+			text-decoration none
+			line-clamp(2, 15px * 1.3)
+			
+			&:hover {
+				text-decoration underline dashed
+			}
+		}
+	}
+	
+	&__chars {
+		display flex
+		align-items center
+		justify-content center
+		height 66px
+		color #828282
+		margin-bottom 10px		
+		font-size 12px
+		line-height 1.33 
+		
+		&-inner {
+			line-clamp(4, 15px * 1.3)
+		}
+	}
+	
+	&__pr {
+		display block
+		margin auto
+	}
+	
+	&__foo {
+		text-align center
+		padding 15px 0 5px 
+		border-top 1px solid #1E1A08
+		font-weight 700 
+		color $color-midnight
+	}
+}
+
+.s-info {
+	background: linear-gradient(180deg, rgba(254, 237, 0, 0.5) 0%, rgba(249, 217, 74, 0.5) 100%), linear-gradient(0deg, rgba(254, 237, 0, 0.9), rgba(254, 237, 0, 0.9)), url(photo-1504438190342-5951e134ffee.jpg);
+	color #1E1A08
+	&__container {
+		padding 50px 0
+		container()
+	}
+	
+	&__title {
+		margin-bottom 45px 
+	}
+	
+	&__grid {
+		@media (min-width 600px) {
+			display grid
+			grid-template-columns 1fr 1fr
+			grid-gap 30px
+		}
+		
+		@media (min-width 992px) {
+			grid-template-columns 1fr 1fr 1fr
+		}
+	}
+	
+	&__item {
+		margin 0 0 20px
+		
+		@media (min-width 600px) {
+			margin 0
+		}
+	}
+}
+
+.c-info {
+	&__title {
+		margin-bottom 10px
+		font-weight 700 
+		font-size 18px 
+	}
+	
+	&__desc {
+		font-size 13px
+		color #36363B
+	}
+}
+
+.grid {
+	
+	@media (min-width 768px) {
+		display grid
+		grid-template-columns 220px auto
+		grid-gap 15px
+	}
+	
+	@media (min-width 992px) {
+		grid-template-columns 260px auto
+		grid-gap 25px
+	}
+}
+
+.aside {
+	padding-top 5px
+	
+	&__flag {
+		padding 5px 10px
+		margin-bottom 25px
+		background #282C23
+		color white 
+		font-size 13px 
+		text-transform uppercase
+		clip-path polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%)
+	}
+	
+	&__nav {
+		margin-bottom 30px 
+	}
+}
+
+.aside-nav {
+	&__title {
+		margin-bottom 15px
+		text-transform uppercase
+		font-size 14px 
+		font-weight 700 
+		line-height 18px
+	}
+	
+	&__list {
+		padding 0
+		margin 0
+		list-style-type none
+		font-size 12px 
+		line-height 1.33 
+		color #165070
+	}
+	
+	&__item {
+		position relative
+		margin-bottom 1em
+		
+		&:hover {
+			color #1E1A08
+			
+			&::before {
+				content ""
+				display block
+				position absolute
+				top 0
+				left -8px
+				bottom 0
+				background #FEED00
+				width 2px 
+			}
+		}
+	}
+	
+	&__link {
+		color inherit
+		text-decoration none
+		
+		&:hover {
+			
+		}
+	}
+}
+
+.paper-with-button {
+	display flex
+	align-items center
+	justify-content center
+	background-size cover
+}
+
+.search-top {
+	position relative
+	width 100%
+	
+	&__field {
+		width 100%
+		height 30px
+		border none
+		padding 0 40px 0 20px
+		display block
+		box-shadow 0px 1px 10px rgba(186, 153, 7, 0.33)
+		border-radius 5px
+	}
+	
+	&__button {
+		position absolute
+		top 0
+		right 10px 
+		padding 5px
+		border none
+		background transparent
+		fill #363636
+	}
+}
+
+.buttons-menu-catalog {
+	margin-bottom -10px
+	display flex
+	flex-wrap wrap
+	grid-auto-flow row dense
+	justify-content flex-start
+	width 100%
+	
+	&__item {
+		margin 0 10px 10px 0 
+	}
+}
+
+.s-envelope {
+	background: linear-gradient(360deg, rgba(224, 224, 224, 0.5) -41.97%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(103.15deg, #E0E0E0 3.03%, #F2F2F2 81.51%);
+	
+	&__container {
+		display grid
+		grid-gap 20px
+		padding 30px 0
+		container()
+		
+		@media (min-width 992px) {
+			grid-template-columns 600px 1fr
+			grid-gap 50px
+		}
+
+		@media (min-width 1220px) {
+			grid-template-columns 740px 1fr
+		}
+	}
+	
+	&__list {
+		font-size 16px
+		font-weight 700
+		
+		li {
+			margin-bottom 30px
+		}
+	}
+}
+
+.c-envelope {
+	background $color-yellow
+	border-radius 10px
+	overflow hidden
+	
+	@media (min-width 480px) {
+		display grid
+		grid-template-columns auto 150px
+		align-items stretch
+		height 250px 
+	}
+	
+	@media (min-width 600px) {
+		grid-template-columns auto 180px
+	}
+	
+	@media (min-width 1220px) {
+		grid-template-columns auto 230px
+	}
+	
+	&__title {
+		color #1E1A08
+		font-size 40px 
+		padding 40px 20px
+		
+		@media (min-width 600px) {
+			
+			font-size 50px 
+			padding 40px 
+		}
+		
+		@media (min-width 1220px) {
+			font-size 64px
+			padding 45px
+		}
+	}
+	
+	&__icons {
+		display flex
+		justify-content space-around
+		padding 20px
+		background #282C23
+		
+		@media (min-width 480px) {
+			display grid
+			justify-content center
+			align-items center
+			padding 0 0 0 60px 
+			clip-path polygon(70px 0, 100% 0, 100% 100%, 0 100%)
+		}
+		
+		@media (min-width 600px) {
+		
+		}
+	}
+}
+
+.s-article {
+	&__container {
+		container()
+		
+		
+		@media (min-width 992px) {
+			padding-right 310px 
+		}
+	}
+}
+
+.--w-175 {
+	width 175px
+}
+
+.--w-200 {
+	width 200px
+}
+
+.--h-175 {
+	height 175px
+}
+
+.image-responsive {
+	max-width 100%
+	height auto
+}
+
+.image-full{
+	display block
+	max-width 100%
+	width 100%
+	height auto
+}
+
+.text-uppercase {
+	text-transform uppercase
+}
+
+.button {
+	display inline-flex
+	flex-wrap wrap
+	align-items center
+	justify-content center
+	max-width 100%
+	border-radius 3px
+	box-shadow 3px 3px 9px rgba(24, 79, 72, .15)
+
+	&_type {
+		&_link {
+			text-decoration none
+		}
+
+		&_button {
+			border none
+			background transparent
+		}
+	}
+	
+	&_round {
+		&_20 {
+			border-radius 20px
+		}
+		
+		&_40 {
+			border-radius 40px
+		}
+	}
+
+	&_size {
+		&_xs {
+			padding 7px 15px
+			font-size 13px 
+		}
+		
+		&_sm {
+			padding 12px
+			font-size 12px 
+			font-weight 700
+		}
+
+		&_md {
+			padding 15px
+			min-height 35px
+			font-size 14px
+		}
+	}
+
+	&_theme {
+		&_o-black-white {
+			border 1px solid #1E1A08
+			background white
+			color #1E1A08
+			
+			&:hover {
+				color white
+				background #1E1A08 
+			}
+			
+		}
+		
+		&_o-black-yellow {
+			border 1px solid black
+			background linear-gradient(90deg, rgba(249, 217, 74, 0.5) 2.94%, rgba(224, 183, 0, 0.5) 100%), #FEED00
+			
+			&:hover {
+				background #1E1A08
+				color white
+			}
+		}
+		
+		&_black {
+			background black
+			color #f2f2f2
+			
+			&:hover {
+				background lighten(black, 10%)
+			}
+		}
+		
+		&_yellow {
+			background #FEED00
+			
+			&:hover {
+				background darken(#FEED00, 7%)
+			}
+			
+			&:active {
+				background lighten(#FEED00, 10%)
+				box-shadow none
+			}
+		}
+	}
+}
+
+.s-env-catalog {
+	 
+	&__container {
+		padding 50px 0 30px
+		container()
+	}
+	
+	&__title {
+		margin-bottom 40px
+	}
+	
+	&__grid {
+		display grid
+		grid-template-columns 1fr
+		grid-gap 10px
+		margin-bottom 35px 
+		
+		@media (min-width 480px) {
+			
+			grid-gap 10px
+			grid-template-columns 1fr 1fr
+		}
+		
+		@media (min-width 768px) {
+			grid-template-columns 1fr 1fr 1fr
+			grid-gap 15px
+		}
+		
+		@media (min-width 992px) {
+			grid-template-columns 1fr 1fr 1fr 1fr	
+			grid-gap 25px 20px
+		}
+	}
+	
+	&__button {
+		display block
+		margin auto
+	}
+}
+
+
+.alert {
+	display flex
+	margin 30px 0
+	padding 15px 30px
+	border 1px solid #E8E8E8
+	box-shadow 0 3px 9px rgba(0, 0, 0, .05)
+	line-height 1.25
+	border-radius: 14px;
+	
+	&__icon {
+		flex none
+		margin-right 20px
+	}
+
+	&__title {
+		font-size 16px
+		font-weight 700 
+	}
+
+	&__desc {
+		font-size 14px
+	}
+}
+
+
+.spoiler {
+	margin-bottom 30px
+
+	&__header {
+		display flex
+		align-items center
+		padding 12px 20px 16px
+		border-radius 5px 5px 0 0
+		background linear-gradient(360deg, $color-periwinkle-3 0, rgba(223, 238, 242, 0) 100%), $color-periwinkle-2
+		cursor pointer
+		user-select none
+	}
+
+	&__title {
+		margin-right 10px
+	}
+
+	&__union {
+		margin-left auto
+	}
+
+	&__content {
+		padding 15px 20px
+		border 1px solid $color-periwinkle
+		border-top none
+	}
+}
+
+/*
+.fully-img {
+	display block
+	max-width 100%
+	width 100%
+	height auto
+}
+
+.button {
+	display inline-flex
+	flex-wrap wrap
+	align-items center
+	justify-content center
+	max-width 100%
+	border-radius 3px
+	box-shadow 3px 3px 9px rgba(24, 79, 72, .15)
+	font-weight 500
+
+	&_type {
+		&_link {
+			text-decoration none
+		}
+
+		&_button {
+			border none
+			background transparent
+		}
+	}
+
+	&_size {
+		&_sm {
+			padding 10px
+			font-size 13px
+		}
+
+		&_md {
+			padding 10px 15px
+			min-height 35px
+			font-size 14px
+		}
+	}
+
+	&_theme {
+
+		&_lime {
+			background-color $color-lime
+			color white
+
+			&:hover {
+				background-color darken($color-lime, 10%)
+			}
+
+			&:active {
+				background linear-gradient(to bottom, darken($color-lime, 10%), lighten($color-lime, 10%))
+			}
+		}
+
+		&_alizarin {
+			background-color $color-alizarin
+			color white
+
+			&:hover {
+				background-color darken($color-alizarin, 10%)
+			}
+
+			&:active {
+				background linear-gradient(to bottom, darken($color-alizarin, 10%), lighten($color-alizarin, 10%))
+			}
+		}
+
+		&_blue {
+			background-color $color-blue
+			color white
+
+			&:hover {
+				background-color $color-greenish-blue
+			}
+
+			&:active {
+				background-color $color-blue-green
+			}
+		}
+
+		&_outline-blue {
+			border 1px solid $color-blue
+			color $color-blue
+
+			&:hover {
+				background-color $color-blue
+				color white
+			}
+
+			&:active {
+				background linear-gradient(0deg, rgba(51, 204, 195, .5) -12.5%, rgba(51, 121, 204, .5) 100%), $color-purple
+				color white
+			}
+		}
+
+		&_outline-purple {
+			border 1px solid $color-purple
+			color $color-purple
+
+			&:hover {
+				background-color $color-purple
+				color white
+			}
+
+			&:active {
+				border-color transparent
+				background linear-gradient(0deg, rgba(51, 204, 195, .5) -12.5%, rgba(51, 121, 204, .5) 100%), $color-purple
+				color white
+			}
+		}
+
+		&_purple {
+			background $color-purple
+			color white
+
+			&:hover {
+				background linear-gradient(0deg, rgba(51, 204, 195, .5) -12.5%, rgba(51, 121, 204, .5) 100%), $color-purple
+			}
+
+			&:active {
+				background $color-purple
+			}
+		}
+	}
+
+	&_round {
+		&_0 {
+			border-radius 0
+		}
+	}
+
+	&_drop {
+		padding 6px 15px 8px
+		border-radius 0
+		box-shadow none
+		cursor pointer
+	}
+
+	&__icon {
+		margin-right 15px
+	}
+
+	&__union {
+		margin-top 3px
+		margin-left 10px
+	}
+
+	&__arrow {
+		margin-left 7px
+	}
+}
+
+.page {
+	letter-spacing .02em
+	font-family Ubuntu, sans-serif
+}
+
+.s-header {
+	padding 15px 0
+
+	&__container {
+		display flex
+		justify-content space-between
+		align-items center
+	}
+
+	&__side {
+		&_bar {
+			display flex
+			flex-direction column
+			align-items flex-end
+		}
+	}
+
+	&__user-bar {
+		margin-bottom 5px
+
+		@media (min-width 768px) {
+			margin-bottom 15px
+		}
+	}
+
+	&__info-bar {
+
+	}
+}
+
+.user-bar {
+	display flex
+	align-items center
+
+	&__group {
+		margin-right 35px
+
+		&_lang {
+			display none
+
+			@media (min-width 480px) {
+				display block
+			}
+		}
+
+		&:last-child {
+			margin-right 0
+		}
+	}
+
+	&__list {
+		display flex
+		align-items center
+	}
+
+	&__icon {
+		width 25px
+		height 25px
+
+		@media (min-width 768px) {
+			margin-right 12px
+			width 12px
+			height 12px
+		}
+	}
+
+	&__item {
+		display flex
+		align-items center
+		padding 5px
+		color $color-blue
+		cursor pointer
+
+		@media (min-width 768px) {
+			padding 0
+		}
+
+		&:hover {
+			text-decoration underline
+		}
+	}
+
+	&__text {
+		display none
+
+		@media (min-width 768px) {
+			display block
+		}
+	}
+
+	&__separator {
+		display none
+		margin 0 12px
+		width 1px
+		height 12px
+		background $color-dusty
+
+		@media (min-width 768px) {
+			display block
+		}
+	}
+}
+
+.call-me {
+	display flex
+	align-items center
+
+	&__phone {
+		margin-right 15px
+		text-decoration none
+		letter-spacing .02em
+		font-size 24px
+
+		&:hover {
+			color $color-purple
+		}
+	}
+}
+
+.info-bar {
+	display flex
+	align-items center
+
+	&__group {
+		margin-right 15px
+
+		@media (min-width 1120px) {
+			margin-right 35px
+		}
+
+		&_hub {
+			flex auto
+			margin 0
+			padding 5px
+
+			@media (min-width 1120px) {
+				margin-right 35px
+				padding 0
+			}
+		}
+
+		&_call-me {
+			display none
+			flex none
+
+			@media (min-width 768px) {
+				display block
+			}
+		}
+
+		&:last-child {
+			margin-right 0
+		}
+	}
+}
+
+.hub-info-bar {
+	display inline-flex
+	align-items center
+	overflow hidden
+	text-decoration none
+	text-overflow ellipsis
+	white-space nowrap
+	letter-spacing .02em
+	font-size 14px
+
+	&:hover &__key {
+		text-decoration underline
+	}
+
+	&:hover &__value {
+		text-decoration underline
+	}
+
+	&__icon {
+		flex none
+
+		width 25px
+		height 25px
+
+		@media (min-width 768px) {
+			margin-right 8px
+			width auto
+			height auto
+		}
+	}
+
+	&__key {
+		display none
+
+		@media (min-width 1120px) {
+			display block
+			margin-right 5px
+		}
+	}
+
+	&__value {
+		display none
+
+		@media (min-width 1120px) {
+			display block
+		}
+	}
+}
+
+.icon {
+	fill currentColor
+
+	&_purple {
+		fill $color-purple
+	}
+}
+
+.lang-switcher {
+	display flex
+	align-items center
+	font-weight 500
+	font-size 12px
+	text-transform uppercase
+
+	&__item {
+		color $color-purple
+		text-decoration none
+
+		&:hover {
+			text-decoration underline
+		}
+	}
+
+	&__current {
+		color $color-asphalt
+		text-decoration none
+		cursor default
+	}
+
+	&__separator {
+		margin 0 9px
+		width 1px
+		height 9px
+		background $color-dusty
+	}
+}
+
+.search-nav {
+	position relative
+	display flex
+	align-items center
+	width 100%
+	height 30px
+
+	&__field {
+		flex auto
+		padding-right 90px
+		padding-left 30px
+		width 100%
+		height 30px
+		border 1px solid $color-dusty
+		border-radius 3px
+		background transparent
+		color inherit
+	}
+
+	&__icon {
+		position absolute
+		top auto
+		left 12px
+	}
+
+	&__button {
+		position absolute
+		right 0
+		padding 5px 10px
+		max-width 90px
+		height 30px
+		border none
+		border-top 3px solid transparent
+		border-bottom 3px solid transparent
+		border-left 1px solid $color-dusty
+		border-radius 3px
+		background transparent
+		color inherit
+		text-align center
+		cursor pointer
+
+		&:hover {
+			border-color $color-dusty
+			background $color-dusty
+		}
+	}
+}
+
+.nav-drop {
+	display flex
+	flex auto
+	flex-direction column
+	margin 0
+	padding 0
+	border 1px solid $color-blue
+	background white
+	box-shadow 3px 3px 9px rgba(24, 79, 72, .15)
+	list-style-type none
+
+	&__item {
+		position relative
+		flex auto
+		max-width 250px
+		width 100%
+	}
+
+	&__link {
+		display block
+		flex auto
+		padding 10px
+		color inherit
+		text-decoration none
+
+		&:hover {
+			background $color-blue
+			color white
+		}
+	}
+}
+
+.nav-main {
+
+	&__list {
+		display flex
+		align-items stretch
+		margin 0
+		padding 0
+		list-style-type none
+		font-size 14px
+	}
+
+	&__item {
+		position relative
+		display flex
+		flex none
+	}
+
+	&__drop {
+		position absolute
+		top 100%
+		left 0
+		flex auto
+	}
+
+
+	&__link {
+		flex auto
+		padding 13px 15px 16px
+		color inherit
+		text-decoration none
+		white-space nowrap
+
+		&:hover {
+			background-color $color-blue
+			color white
+		}
+
+		&_active {
+			border-color $color-purple
+			background-color $color-purple
+			color white
+
+			&:hover {
+				background-color $color-purple
+				color white
+				cursor default
+			}
+		}
+	}
+
+	&__more-item {
+		min-width 75px
+	}
+
+	&__union {
+		margin-left 4px
+	}
+}
+
+.hub-card-price {
+	&__label {
+		font-size 13px
+	}
+
+	&__value {
+
+		@supports (flex-wrap wrap) {
+			display flex
+			flex-wrap wrap
+			align-items center
+		}
+	}
+
+	&__old {
+		display inline
+		margin-right 10px
+		text-decoration line-through
+		font-size 18px
+	}
+
+	&__new {
+		display inline
+		font-size 36px
+	}
+}
+
+.hub-card-buttons {
+
+	&__row {
+		margin-bottom 15px
+
+		@media (min-width 1100px) {
+			display flex
+			align-items center
+		}
+	}
+
+	&__button {
+		margin-right 30px
+		height 45px
+	}
+
+	&__link {
+		display inline-flex
+		justify-content center
+		padding 10px 5px
+		text-align center
+
+		@media (min-width 1100px) {
+			text-align left
+		}
+	}
+}
+
+.tabs-chars {
+	margin 0
+	padding 0
+	list-style-type none
+
+	@media (min-width 600px) {
+		display flex
+	}
+
+	&__button {
+		padding 17px 20px  13px
+		border 1px solid rgba(223, 238, 242, 1)
+		border-bottom none
+
+		color $color-blue
+		cursor pointer
+
+		&:first-child {
+			border-radius 5px 5px 0 0
+		}
+
+		@media (min-width 600) {
+			border-radius 5px 5px 0 0
+		}
+
+		&_active,
+		&:hover {
+			border-color transparent
+			background linear-gradient(360deg, rgba(202, 224, 229, 1) 0, rgba(223, 238, 242, 0) 100%), rgba(223, 238, 242, 1)
+			color $color-granite
+		}
+	}
+}
+
+.hub-attach {
+	display inline-flex
+	align-items center
+	color $color-blue
+	font-size 13px
+
+	&__icon {
+		margin-right 8px
+	}
+}
+
+.hub-chars-aside {
+
+}
+
+.aside {
+	&__item {
+		margin-bottom 30px
+	}
+}
+
+.aside-rec-catalog {
+	&__title {
+		margin-bottom 15px
+	}
+}
+
+.w-foo {
+	padding 15px 0 0
+}
+
+
+
+.title-with-bg {
+	display flex
+	align-items center
+	margin-bottom 30px
+	padding 25px
+	min-height 160px
+
+	&__title {
+		flex auto
+		width 100%
+	}
+}
+
+.g-edge-lg {
+	margin 0 0 50px
+
+	&__card {
+		margin-bottom 50px
+
+		&:last-child {
+			margin-bottom none
+		}
+	}
+}
+
+.g-edge-md {
+	margin 0 -10px 50px
+	font-size 0
+
+	@supports(flex-wrap wrap) {
+		display flex
+		flex-wrap wrap
+	}
+
+	&__card {
+		margin-bottom 20px
+		padding 0 10px
+
+		@media (min-width 480px) {
+			display inline-block
+			width 50%
+		}
+
+		@media (min-width 768px) {
+			width 33.3%
+		}
+	}
+}
+
+.g-catalog {
+	&__item {
+		display none
+
+		&_t {
+			display block
+
+			@media (min-width 768px) {
+				display none
+			}
+		}
+
+		&_active {
+			@media (min-width 768px) {
+				display block
+			}
+		}
+	}
+
+	&__l {
+
+	}
+
+	&__tl {
+
+	}
+}
+
+.g-catalog-t {
+	margin 0 -10px
+	font-size 0
+
+	@supports(flex-wrap wrap) {
+		display flex
+		flex-wrap wrap
+	}
+
+	&__card {
+		padding 15px 10px
+
+		@media (min-width 480px) {
+			display inline-block
+			width 50%
+		}
+
+		@media (min-width 768px) {
+			width 33.3%
+		}
+	}
+}
+
+.g-catalog-l {
+	border-spacing 0 5px
+}
+
+.g-catalog-tl {
+	display block
+
+	&__card {
+		margin-bottom 20px
+	}
+}
+
+.g-edge-sm {
+	margin 0 -10px 50px
+	font-size 0
+
+	@supports(flex-wrap wrap) {
+		display flex
+		flex-wrap wrap
+	}
+
+	&__card {
+		margin-bottom 20px
+		padding 0 10px
+
+		@media (min-width 480px) {
+			display inline-block
+			width 50%
+		}
+
+		@media (min-width 768px) {
+			width 25%
+		}
+	}
+}
+
+.g-gallery {
+	margin 0 -5px
+	font-size 0
+
+	@media (min-width 600px) {
+		margin 0 -10px
+	}
+
+	@supports (flex-wrap wrap) {
+		display flex
+		flex-wrap wrap
+	}
+
+	&__card {
+		padding 5px
+		width 50%
+
+		@media (min-width 600px) {
+			padding 10px
+			width 33.33%
+		}
+
+		@media (min-width 768px) {
+			width 25%
+		}
+
+		@media (min-width 1220px) {
+
+		}
+	}
+}
+
+.hub-catalog-panel {
+	display flex
+
+	&__item {
+		margin-right 12px
+		color $color-asphalt
+		cursor pointer
+
+		&:hover,
+		&_active {
+			color $color-granite
+		}
+
+		&:last-child {
+			margin-right 0
+		}
+	}
+}
+
+.aside-filter {
+	border-right 1px solid $color-periwinkle-4
+
+	&__title {
+		font-size 18px
+	}
+}
+
+.aside-collapse {
+	&__header {
+		display flex
+		align-items center
+		padding 15px 10px
+		color $color-blue
+		cursor pointer
+
+		&:hover,
+		&_open {
+			color $color-purple
+		}
+	}
+
+	&__title {
+		margin-right 10px
+		font-size 14px
+	}
+
+	&__arrow {
+		display flex
+		align-items center
+		justify-content center
+		margin-left auto
+		padding 2px 0 0
+		width 20px
+		height 20px
+		border 1px solid $color-periwinkle-2
+		border-radius 50%
+		transform-origin center
+		transition .3s transform
+
+		&_open {
+			transform rotate(180deg)
+		}
+	}
+
+	&__body {
+		padding 15px 25px
+		background linear-gradient(0deg, white 0, rgba(255, 255, 255, 0) 100%), $color-smoke-2
+		box-shadow 0 1px 0 $color-smoke-3, inset 0 1px 0 $color-smoke-3
+	}
+
+	&__separator {
+		margin-right 5px
+		margin-left 10px
+		border-bottom 1px solid $color-periwinkle-4
+	}
+}
+
+.aside-nav {
+	margin 0
+	padding 0
+	list-style-type none
+	font-size 13px
+
+	&__item {
+		margin-bottom 10px
+	}
+
+	&__link {
+		&_active {
+			color $color-purple
+		}
+	}
+}
+
+
+.aside-separator {
+	height 1px
+	background $color-periwinkle-2
+}
+
+.aside-group {
+	padding 0 30px 0 10px
+
+	&__title {
+		margin-bottom 20px
+		font-size 15px
+	}
+}
+
+.aside-list {
+	margin 0 -20px 0 0
+	padding 0
+	list-style-position inside
+}
+
+.checkbox {
+	display flex
+	align-items flex-start
+
+	&__box {
+		margin-top 3px
+		margin-right 12px
+		width 12px
+		height 12px
+	}
+}
+
+.select {
+	display block
+	padding 0 40px 0 15px
+	width 100%
+	height 30px
+	border 1px solid $color-gainsborough
+	border-radius 3px
+	font-size 12px
+	appearance none
+
+	background url(../images/select.svg) right center no-repeat white
+}
+
+.hub-from-to {
+	display flex
+	align-items center
+	font-size 13px
+
+	&__column {
+		display flex
+		align-items center
+		margin-right 10px
+	}
+
+	&__label {
+		margin-right 5px
+	}
+
+	&__field {
+		width 50px
+		height 30px
+		border 1px solid $color-periwinkle-4
+		border-radius 5px
+		background $color-smoke-4
+		color $color-asphalt
+		text-align center
+	}
+}
+
+.hub-aside-reset {
+	display flex
+	align-items center
+	justify-content center
+	font-size 12px
+	cursor pointer
+
+	&:hover {
+		color $color-purple
+	}
+
+	&__icon {
+		margin-right 8px
+	}
+}
+*/
+.hidden {
+	display none
+}
