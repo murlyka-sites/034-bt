@@ -9,7 +9,7 @@
     <meta content="telephone=no" name="format-detection">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&amp;amp;subset=cyrillic">
-    <link rel="stylesheet" href="css/style.css?ts=1518951270221">
+    <link rel="stylesheet" href="css/style.css?ts=1518971642525">
   </head>
   <body class="page">
     <svg width="0" height="0" hidden version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -140,16 +140,480 @@
           <div class="s-menu-catalog__column s-menu-catalog__column_buttons">
             <div class="s-menu-catalog__buttons buttons-menu-catalog">
               <div class="buttons-menu-catalog__item">
-                <button class="button button_size_xs button_theme_o-black-yellow button_round_5">Каталог</button>
+                <button class="button button_size_xs button_theme_o-black-yellow button_round_5" :class="{'button_state_black': topMenuCatalog == 1}" @click="topMenuCatalog = 1">Каталог</button>
               </div>
               <div class="buttons-menu-catalog__item">
-                <button class="button button_size_xs button_theme_o-black-yellow button_round_5">Входная группа</button>
+                <button class="button button_size_xs button_theme_o-black-yellow button_round_5" :class="{'button_state_black': topMenuCatalog == 2}" @click="topMenuCatalog = 2">Входная группа</button>
               </div>
               <div class="buttons-menu-catalog__item">
-                <button class="button button_size_xs button_theme_o-black-yellow button_round_5">Санузел</button>
+                <button class="button button_size_xs button_theme_o-black-yellow button_round_5" :class="{'button_state_black': topMenuCatalog == 3}" @click="topMenuCatalog = 3">Санузел</button>
               </div>
               <div class="buttons-menu-catalog__item">
-                <button class="button button_size_xs button_theme_o-black-yellow button_round_5">Пути следований</button>
+                <button class="button button_size_xs button_theme_o-black-yellow button_round_5" :class="{'button_state_black': topMenuCatalog == 4}" @click="topMenuCatalog = 4">Пути следований</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-top-menu-catalog" v-show="topMenuCatalog != 0">
+        <div class="s-top-menu-catalog__wrap">
+          <button class="s-top-menu-catalog__button s-top-menu-catalog__button_x" @click="topMenuCatalog = 0">
+            <svg class="s-top-menu-catalog__button-icon" width="15" height="15">
+              <use xlink:href="#x"></use>
+            </svg>
+          </button>
+          <button class="s-top-menu-catalog__button s-top-menu-catalog__button_arrow" @click="topMenuCatalog = 0">
+            <svg class="s-top-menu-catalog__button-icon" width="15" height="15">
+              <use class="rotate-180" xlink:href="#union"></use>
+            </svg>
+          </button>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 1">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 2">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 3">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 4">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 5">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
               </div>
             </div>
           </div>

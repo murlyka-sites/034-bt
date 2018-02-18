@@ -1,0 +1,121 @@
+.s-top-menu-catalog(v-show="topMenuCatalog != 0")
+	.s-top-menu-catalog__wrap
+		button.s-top-menu-catalog__button.s-top-menu-catalog__button_x(@click="topMenuCatalog = 0")
+			svg.s-top-menu-catalog__button-icon(width="15" height="15"): use(xlink:href="#x")
+
+		button.s-top-menu-catalog__button.s-top-menu-catalog__button_arrow(@click="topMenuCatalog = 0")
+			svg.s-top-menu-catalog__button-icon(width="15" height="15"): use.rotate-180(xlink:href="#union")
+		each i in [1, 2, 3, 4, 5]
+			.s-top-menu-catalog__container(v-show="topMenuCatalog == "+i)
+				.s-top-menu-catalog__item
+					.top-menu-catalog
+						h3.top-menu-catalog__title КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО
+						ul.top-menu-catalog__list
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Архитектурное проектирование
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Реконструкция существующих зданий и сооружений
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Техническое заключение конструкций, экспертиза
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Капитальный и текущий ремонт помещений любого назначения
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Малоэтажное строительство
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Разработка и согласование проектной документации
+
+				.s-top-menu-catalog__item
+					.top-menu-catalog
+						h3.top-menu-catalog__title МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ
+						ul.top-menu-catalog__list
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Архитектурное проектирование
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Реконструкция существующих зданий и сооружений
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Техническое заключение конструкций, экспертиза
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Капитальный и текущий ремонт помещений любого назначения
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Малоэтажное строительство
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Разработка и согласование проектной документации
+			
+				.s-top-menu-catalog__item
+					.top-menu-catalog
+						h3.top-menu-catalog__title МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ
+						ul.top-menu-catalog__list
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж электрических сетей
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж систем электроосвещения
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Пусконаладка электрооборудования
+			
+				.s-top-menu-catalog__item
+					.top-menu-catalog
+						h3.top-menu-catalog__title РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ
+						ul.top-menu-catalog__list
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Ремонт магазинов
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Ремонт складов
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Реконструкция помещений
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Ремонт и отделка банков
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Отделка офисов
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Дизайн-проект
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Проектирование и согласование
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Капитальный ремонт
+			
+				.s-top-menu-catalog__item
+					.top-menu-catalog
+						h3.top-menu-catalog__title МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ
+						ul.top-menu-catalog__list
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж чиллеров и фанкойлов
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж VRF-систем
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж прецизионных кондиционеров
+
+				.s-top-menu-catalog__item
+					.top-menu-catalog
+						h3.top-menu-catalog__title ИНЖЕНЕРНЫЕ СИСТЕМЫ
+						ul.top-menu-catalog__list
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Проектирование инженерных систем
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Вентиляция
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Кондиционирование
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж электрических сетей
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Системы водоснабжения
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Видеонаблюдение
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Структурированные кабельные сети (СКС, компьютерные сети)
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") СКУД - Системы контроля и управления доступом
+			
+				.s-top-menu-catalog__item
+					.top-menu-catalog
+						h3.top-menu-catalog__title МОНТАЖ СКС
+						ul.top-menu-catalog__list
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж локально-вычислительных сетей
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж компьютерной сети
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Монтаж ВОЛС
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Тестирование СКС и сертификация
+							li.top-menu-catalog__item
+								a.top-menu-catalog__link(href="#") Тестирование ЛВС

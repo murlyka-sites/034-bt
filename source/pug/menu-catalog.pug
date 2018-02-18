@@ -7,10 +7,10 @@
 		.s-menu-catalog__column.s-menu-catalog__column_buttons
 			.s-menu-catalog__buttons.buttons-menu-catalog
 				.buttons-menu-catalog__item
-					button.button.button_size_xs.button_theme_o-black-yellow.button_round_5 Каталог
+					button.button.button_size_xs.button_theme_o-black-yellow.button_round_5(:class="{'button_state_black': topMenuCatalog == 1}" @click="topMenuCatalog = 1") Каталог
 				.buttons-menu-catalog__item
-					button.button.button_size_xs.button_theme_o-black-yellow.button_round_5 Входная группа
+					button.button.button_size_xs.button_theme_o-black-yellow.button_round_5(:class="{'button_state_black': topMenuCatalog == 2}" @click="topMenuCatalog = 2") Входная группа
 				.buttons-menu-catalog__item
-					button.button.button_size_xs.button_theme_o-black-yellow.button_round_5 Санузел
+					button.button.button_size_xs.button_theme_o-black-yellow.button_round_5(:class="{'button_state_black': topMenuCatalog == 3}" @click="topMenuCatalog = 3") Санузел
 				.buttons-menu-catalog__item
-					button.button.button_size_xs.button_theme_o-black-yellow.button_round_5 Пути следований
+					button.button.button_size_xs.button_theme_o-black-yellow.button_round_5(:class="{'button_state_black': topMenuCatalog == 4}" @click="topMenuCatalog = 4") Пути следований

@@ -1,7 +1,17 @@
+let vm = new Vue({
+	el: '#app',
+	data: {
+		topMenuCatalog: 0
+	}
+});
+
 $('.gallery-slider').each(function() {
 	let pr = new Swiper(this.querySelector('.gallery-slider__pr .swiper-container'), {
 		slidesPerView: 1,
 		spaceBetween: 20,
+		// hashNavigation: {
+		// 	watchState: true
+		// },
 		allowTouchMove: false
 	});
 
