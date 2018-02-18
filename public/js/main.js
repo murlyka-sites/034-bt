@@ -1,7 +1,8 @@
 let vm = new Vue({
 	el: '#app',
 	data: {
-		topMenuCatalog: 0
+		topMenuCatalog: 0,
+		asideMenuCatalog: false
 	}
 });
 

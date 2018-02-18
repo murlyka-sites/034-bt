@@ -1,72 +1,77 @@
 .s-main-catalog
 	.s-main-catalog__container.grid
 		aside.grid__column.grid__column_aside.aside
-			.aside__flag Каталог
-			.aside__nav
-				.aside-nav
-					.aside-nav__title КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО 
-					.aside-nav__list
-						li.aside-nav__item: a.aside-nav__link(href="#") Архитектурное проектирование
-						li.aside-nav__item: a.aside-nav__link(href="#") Реконструкция существующих зданий и сооружений
-						li.aside-nav__item: a.aside-nav__link(href="#") Техническое заключение конструкций, экспертиза
-						li.aside-nav__item: a.aside-nav__link(href="#") Капитальный и текущий ремонт помещений любого назначения
-						li.aside-nav__item: a.aside-nav__link(href="#") Малоэтажное строительство
-						li.aside-nav__item: a.aside-nav__link(href="#") Разработка и согласование проектной документации
+			.aside__flag(@click="asideMenuCatalog = !asideMenuCatalog")
+				svg.aside__flag-burger(width="15" height="15"): use(xlink:href="#burger")
 
-			.aside__nav
-				.aside-nav
-					.aside-nav__title МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ
-					.aside-nav__list
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж приточно вытяжной установки
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж канальных и крышных вентиляторов
-						li.aside-nav__item: a.aside-nav__link(href="#") Пусконаладочные работы (ПНР) систем вентиляции 
-							
-			.aside__nav
-				.aside-nav
-					.aside-nav__title МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ
-					.aside-nav__list
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж электрических сетей
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж систем электроосвещения
-						li.aside-nav__item: a.aside-nav__link(href="#") Пусконаладка электрооборудования
-							
-			.aside__nav
-				.aside-nav
-					.aside-nav__title РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ
-					.aside-nav__list
-						li.aside-nav__item: a.aside-nav__link(href="#") Ремонт магазинов
-						li.aside-nav__item: a.aside-nav__link(href="#") Ремонт складов
-						li.aside-nav__item: a.aside-nav__link(href="#") Реконструкция помещений
-						li.aside-nav__item: a.aside-nav__link(href="#") Ремонт и отделка банков
-						li.aside-nav__item: a.aside-nav__link(href="#") Отделка офисов
-						li.aside-nav__item: a.aside-nav__link(href="#") Дизайн-проект
-						li.aside-nav__item: a.aside-nav__link(href="#") Проектирование и согласование
-						li.aside-nav__item: a.aside-nav__link(href="#") Капитальный ремонт
-							
-			.aside__nav
-				.aside-nav
-					.aside-nav__title МОНТАЖ СКС
-					.aside-nav__list
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж локально-вычислительных сетей
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж компьютерной сети
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж ВОЛС
-						li.aside-nav__item: a.aside-nav__link(href="#") Тестирование СКС и сертификация
-						li.aside-nav__item: a.aside-nav__link(href="#") Тестирование ЛВС
-							
-			.aside__nav
-				.aside-nav
-					.aside-nav__title МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ
-					.aside-nav__list
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж чиллеров и фанкойлов
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж VRF-систем
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж прецизионных кондиционеров
-							
-			.aside__nav
-				.aside-nav
-					.aside-nav__title МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ
-					.aside-nav__list
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж электрических сетей
-						li.aside-nav__item: a.aside-nav__link(href="#") Монтаж систем электроосвещения
-						li.aside-nav__item: a.aside-nav__link(href="#") Пусконаладка электрооборудования
+				| Каталог
+			
+			.visible-sm(:class="{'hidden': asideMenuCatalog}")
+				.aside__nav
+					.aside-nav
+						.aside-nav__title КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО 
+						.aside-nav__list
+							li.aside-nav__item: a.aside-nav__link(href="#") Архитектурное проектирование
+							li.aside-nav__item: a.aside-nav__link(href="#") Реконструкция существующих зданий и сооружений
+							li.aside-nav__item: a.aside-nav__link(href="#") Техническое заключение конструкций, экспертиза
+							li.aside-nav__item: a.aside-nav__link(href="#") Капитальный и текущий ремонт помещений любого назначения
+							li.aside-nav__item: a.aside-nav__link(href="#") Малоэтажное строительство
+							li.aside-nav__item: a.aside-nav__link(href="#") Разработка и согласование проектной документации
+
+				.aside__nav
+					.aside-nav
+						.aside-nav__title МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ
+						.aside-nav__list
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж приточно вытяжной установки
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж канальных и крышных вентиляторов
+							li.aside-nav__item: a.aside-nav__link(href="#") Пусконаладочные работы (ПНР) систем вентиляции 
+								
+				.aside__nav
+					.aside-nav
+						.aside-nav__title МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ
+						.aside-nav__list
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж электрических сетей
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж систем электроосвещения
+							li.aside-nav__item: a.aside-nav__link(href="#") Пусконаладка электрооборудования
+								
+					.aside__nav
+						.aside-nav
+							.aside-nav__title РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ
+							.aside-nav__list
+								li.aside-nav__item: a.aside-nav__link(href="#") Ремонт магазинов
+								li.aside-nav__item: a.aside-nav__link(href="#") Ремонт складов
+								li.aside-nav__item: a.aside-nav__link(href="#") Реконструкция помещений
+								li.aside-nav__item: a.aside-nav__link(href="#") Ремонт и отделка банков
+								li.aside-nav__item: a.aside-nav__link(href="#") Отделка офисов
+								li.aside-nav__item: a.aside-nav__link(href="#") Дизайн-проект
+								li.aside-nav__item: a.aside-nav__link(href="#") Проектирование и согласование
+								li.aside-nav__item: a.aside-nav__link(href="#") Капитальный ремонт
+									
+					.aside__nav
+						.aside-nav
+							.aside-nav__title МОНТАЖ СКС
+							.aside-nav__list
+								li.aside-nav__item: a.aside-nav__link(href="#") Монтаж локально-вычислительных сетей
+								li.aside-nav__item: a.aside-nav__link(href="#") Монтаж компьютерной сети
+								li.aside-nav__item: a.aside-nav__link(href="#") Монтаж ВОЛС
+								li.aside-nav__item: a.aside-nav__link(href="#") Тестирование СКС и сертификация
+								li.aside-nav__item: a.aside-nav__link(href="#") Тестирование ЛВС
+								
+				.aside__nav
+					.aside-nav
+						.aside-nav__title МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ
+						.aside-nav__list
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж чиллеров и фанкойлов
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж VRF-систем
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж прецизионных кондиционеров
+								
+				.aside__nav
+					.aside-nav
+						.aside-nav__title МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ
+						.aside-nav__list
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж электрических сетей
+							li.aside-nav__item: a.aside-nav__link(href="#") Монтаж систем электроосвещения
+							li.aside-nav__item: a.aside-nav__link(href="#") Пусконаладка электрооборудования
 		.grid__column.grid__column_main
 			h2.s-main-catalog__title.t2 Товары и Оборудование для адаптации
 			-

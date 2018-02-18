@@ -9,7 +9,7 @@
     <meta content="telephone=no" name="format-detection">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&amp;amp;subset=cyrillic">
-    <link rel="stylesheet" href="css/style.css?ts=1518971642525">
+    <link rel="stylesheet" href="css/style.css?ts=1518973277854">
   </head>
   <body class="page">
     <svg width="0" height="0" hidden version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -631,84 +631,90 @@
       <div class="s-main-catalog">
         <div class="s-main-catalog__container grid">
           <aside class="grid__column grid__column_aside aside">
-            <div class="aside__flag">Каталог</div>
-            <div class="aside__nav">
-              <div class="aside-nav">
-                <div class="aside-nav__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО </div>
-                <div class="aside-nav__list">
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Архитектурное проектирование</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Малоэтажное строительство</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Разработка и согласование проектной документации</a></li>
+            <div class="aside__flag" @click="asideMenuCatalog = !asideMenuCatalog">
+              <svg class="aside__flag-burger" width="15" height="15">
+                <use xlink:href="#burger"></use>
+              </svg>Каталог
+            </div>
+            <div class="visible-sm" :class="{'hidden': asideMenuCatalog}">
+              <div class="aside__nav">
+                <div class="aside-nav">
+                  <div class="aside-nav__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО </div>
+                  <div class="aside-nav__list">
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Архитектурное проектирование</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Малоэтажное строительство</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Разработка и согласование проектной документации</a></li>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="aside__nav">
-              <div class="aside-nav">
-                <div class="aside-nav__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</div>
-                <div class="aside-nav__list">
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж приточно вытяжной установки</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж канальных и крышных вентиляторов</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Пусконаладочные работы (ПНР) систем вентиляции </a></li>
+              <div class="aside__nav">
+                <div class="aside-nav">
+                  <div class="aside-nav__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</div>
+                  <div class="aside-nav__list">
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж приточно вытяжной установки</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж канальных и крышных вентиляторов</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Пусконаладочные работы (ПНР) систем вентиляции </a></li>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="aside__nav">
-              <div class="aside-nav">
-                <div class="aside-nav__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</div>
-                <div class="aside-nav__list">
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж электрических сетей</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж систем электроосвещения</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Пусконаладка электрооборудования</a></li>
+              <div class="aside__nav">
+                <div class="aside-nav">
+                  <div class="aside-nav__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</div>
+                  <div class="aside-nav__list">
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж электрических сетей</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж систем электроосвещения</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Пусконаладка электрооборудования</a></li>
+                  </div>
+                </div>
+                <div class="aside__nav">
+                  <div class="aside-nav">
+                    <div class="aside-nav__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</div>
+                    <div class="aside-nav__list">
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Ремонт магазинов</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Ремонт складов</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Реконструкция помещений</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Ремонт и отделка банков</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Отделка офисов</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Дизайн-проект</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Проектирование и согласование</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Капитальный ремонт</a></li>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside__nav">
+                  <div class="aside-nav">
+                    <div class="aside-nav__title">МОНТАЖ СКС</div>
+                    <div class="aside-nav__list">
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж компьютерной сети</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж ВОЛС</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Тестирование СКС и сертификация</a></li>
+                      <li class="aside-nav__item"><a class="aside-nav__link" href="#">Тестирование ЛВС</a></li>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="aside__nav">
-              <div class="aside-nav">
-                <div class="aside-nav__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</div>
-                <div class="aside-nav__list">
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Ремонт магазинов</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Ремонт складов</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Реконструкция помещений</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Ремонт и отделка банков</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Отделка офисов</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Дизайн-проект</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Проектирование и согласование</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Капитальный ремонт</a></li>
+              <div class="aside__nav">
+                <div class="aside-nav">
+                  <div class="aside-nav__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</div>
+                  <div class="aside-nav__list">
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж VRF-систем</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="aside__nav">
-              <div class="aside-nav">
-                <div class="aside-nav__title">МОНТАЖ СКС</div>
-                <div class="aside-nav__list">
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж локально-вычислительных сетей</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж компьютерной сети</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж ВОЛС</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Тестирование СКС и сертификация</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Тестирование ЛВС</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="aside__nav">
-              <div class="aside-nav">
-                <div class="aside-nav__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</div>
-                <div class="aside-nav__list">
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж VRF-систем</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж прецизионных кондиционеров</a></li>
-                </div>
-              </div>
-            </div>
-            <div class="aside__nav">
-              <div class="aside-nav">
-                <div class="aside-nav__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</div>
-                <div class="aside-nav__list">
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж электрических сетей</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж систем электроосвещения</a></li>
-                  <li class="aside-nav__item"><a class="aside-nav__link" href="#">Пусконаладка электрооборудования</a></li>
+              <div class="aside__nav">
+                <div class="aside-nav">
+                  <div class="aside-nav__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</div>
+                  <div class="aside-nav__list">
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж электрических сетей</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Монтаж систем электроосвещения</a></li>
+                    <li class="aside-nav__item"><a class="aside-nav__link" href="#">Пусконаладка электрооборудования</a></li>
+                  </div>
                 </div>
               </div>
             </div>

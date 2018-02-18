@@ -606,6 +606,8 @@
 	padding-top 5px
 	
 	&__flag {
+		display flex
+		align-items center
 		padding 5px 10px
 		margin-bottom 25px
 		background #282C23
@@ -613,6 +615,18 @@
 		font-size 13px 
 		text-transform uppercase
 		clip-path polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%)
+		
+		&-burger {
+			display block
+			border none
+			margin-right 5px 
+			line-height 0
+			stroke currentColor
+			
+			@media (min-width 768px) {
+				display none
+			}
+		}
 	}
 	
 	&__nav {
@@ -2051,4 +2065,10 @@
 */
 .hidden {
 	display none
+}
+
+.visible-sm {
+	@media (min-width 768px) {
+		display block
+	}
 }
