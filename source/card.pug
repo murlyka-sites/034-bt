@@ -1,0 +1,20 @@
+- let ts = + new Date
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+	body.page
+		include pug/sprite
+		#app
+			include pug/top
+			include pug/header
+			include pug/menu-catalog
+			include pug/top-menu-catalog
+			include pug/breadcrumbs
+			
+			include pug/card
+			| 123
+			include pug/foo-nav
+			include pug/map-of-services
+		include pug/script
+						
