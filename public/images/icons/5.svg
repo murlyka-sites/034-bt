@@ -1,0 +1,16 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>house-2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(9968 -3562)">
+<g id="house-2">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-9968 3562)" fill="#EB5757"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 16 4L 8 0L 0 4L 0 6L 1 5.5L 1 16L 15 16L 14.9995 5.5L 16 6L 16 4ZM 14 15L 2 15L 2 5L 8 2L 14 5L 14 15Z"/>
+</defs>
+</svg>

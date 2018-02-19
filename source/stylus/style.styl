@@ -6,7 +6,7 @@
 // @import "inc/card"
 // @import "inc/section"
 // @import "inc/w"
-// @import "inc/offset"
+@import "inc/offset"
 @import "inc/swiper"
 // @import "inc/iCheck"
 // @import "inc/ion-rangeSlider"
@@ -22,6 +22,22 @@
 	&-180 {
 		transform-origin center
 		transform rotate(180deg)
+	}
+}
+
+.list-icons {
+	display grid
+	align-items center
+	
+	&_small {
+		grid-template-columns 20px auto
+		grid-gap 15px
+		font-size 15px 
+	}
+	
+	&_medium {
+		grid-template-columns 30px auto
+		grid-gap 20px 30px
 	}
 }
 
@@ -53,6 +69,17 @@
 	
 	&__next {
 		right 0
+	}
+}
+
+.g-gallery {
+	display grid
+	grid-template-columns 1fr 1fr
+	grid-gap 10px
+	
+	@media (min-width 768px) {
+		grid-template-columns 1fr 1fr 1fr 1fr
+		grid-gap 20px
 	}
 }
 
@@ -773,27 +800,48 @@
 }
 
 .c-envelope {
-	background $color-yellow
+	position relative
+	background-position center
+	background-size cover
 	border-radius 10px
-	overflow hidden
 	
-	@media (min-width 480px) {
-		display grid
-		grid-template-columns auto 150px
-		align-items stretch
-		height 250px 
+	&__blur {
+		background-position center 
+		background-size cover
+		border-radius 10px
+		position absolute
+		top 10px
+		left 10px
+		right 10px
+		bottom 0
+		filter blur(15px)
 	}
 	
-	@media (min-width 600px) {
-		grid-template-columns auto 180px
-	}
 	
-	@media (min-width 1220px) {
-		grid-template-columns auto 230px
+	&__container {
+		position relative
+		z-index 2 
+		overflow hidden
+		border-radius 10px
+		
+		
+		@media (min-width 480px) {
+			display grid
+			grid-template-columns auto 150px
+			align-items stretch
+			height 250px 
+		}
+		
+		@media (min-width 600px) {
+			grid-template-columns auto 180px
+		}
+		
+		@media (min-width 1220px) {
+			grid-template-columns auto 230px
+		}
 	}
 	
 	&__title {
-		color #1E1A08
 		font-size 40px 
 		padding 40px 20px
 		
@@ -813,14 +861,16 @@
 		display flex
 		justify-content space-around
 		padding 20px
-		background #282C23
 		
 		@media (min-width 480px) {
 			display grid
 			justify-content center
 			align-items center
-			padding 0 0 0 60px 
-			clip-path polygon(70px 0, 100% 0, 100% 100%, 0 100%)
+			padding 10px 0 10px 60px
+			
+			&_skew {
+				clip-path polygon(70px 0, 100% 0, 100% 100%, 0 100%)
+			} 
 		}
 		
 		@media (min-width 600px) {
@@ -1020,6 +1070,7 @@
 	box-shadow 0 3px 9px rgba(0, 0, 0, .05)
 	line-height 1.25
 	border-radius: 14px;
+	background #FFF7F7
 	
 	&__icon {
 		flex none

@@ -45,7 +45,25 @@
 				svg.spoiler__union.icon.text-purple(width="8" height="5"): use(href="#union")
 			.spoiler__content.hidden
 				p.p.offset-0 Спойлер обычный текст
-		
+
+		.c-envelope.offset-50(style="background-image: url(images/bg-b1.jpg)")
+			.c-envelope__blur(style="background-image: url(images/bg-b1.jpg)")
+			.c-envelope__container
+				.c-envelope__title.text-dark-brown Комфортная Среда
+				.c-envelope__icons.c-envelope__icons_skew.paper-fir-green
+					img.c-envelope__icon(src="images/icons/1.svg" width="30" height="26")
+					img.c-envelope__icon(src="images/icons/2.svg" width="28" height="30")
+					img.c-envelope__icon(src="images/icons/3.svg" width="26" height="30")
+
+		.c-envelope.offset-50(style="background-image: url(images/bg-b2.jpg)")
+			.c-envelope__blur(style="background-image: url(images/bg-b2.jpg)")
+			.c-envelope__container
+				.c-envelope__title.text-white Строительные Технологии
+				.c-envelope__icons
+					img.c-envelope__icon(src="images/icons/11.svg" width="30" height="26")
+					img.c-envelope__icon(src="images/icons/12.svg" width="28" height="30")
+					img.c-envelope__icon(src="images/icons/13.svg" width="26" height="30")
+					img.c-envelope__icon(src="images/icons/14.svg" width="26" height="30")
 		//- 	.g-edge-lg
 		//- 		.g-edge-lg__card: figure.c-edge-lg
 		//- 			img.c-edge-lg__icon(src="images/edge/1.svg" width="90" height="90")
@@ -129,11 +147,37 @@
 					svg.slider-button__icon(width="40" height="40"): use(href="#prev")
 				button.slider-button.gallery-slider__next
 					svg.slider-button__icon(width="40" height="40"): use(href="#next")
-					
-				
-		//- 	.g-gallery: each gallery in [1,2,3,4,5,6,7,8]
-		//- 		.g-gallery__card: a(href="images/grid-gallery/"+gallery+".jpg" data-fancybox="gallery"): img.image-full(src="images/grid-gallery/"+gallery+".jpg" width="204" height="135" alt="Фото")
+
+		.g-gallery.offset-20: each gallery in [1,2,3,4,5,6,7,8]
+			.g-gallery__card: a(href="images/grid-gallery/"+gallery+".jpg" data-fancybox="gallery"): img.image-full(src="images/grid-gallery/"+gallery+".jpg" width="204" height="135" alt="Фото")
+
+		.list-icons.list-icons_small.offset-20 
+			.list-icons__icon
+				img(src="images/icons/4.svg", alt="")
+			.list-icons__title Кровельные и фасадные материалы
+			.list-icons__icon
+				img(src="images/icons/5.svg", alt="")
+			.list-icons__title Ворота, шагбаумы, противопожарные двери 
+			.list-icons__icon
+				img(src="images/icons/6.svg", alt="")
+			.list-icons__title Алюминиевые, металлопластиковые конструкции
+			.list-icons__icon
+				img(src="images/icons/7.svg", alt="")
+			.list-icons__title Металлоконструкции, лестницы, ограждения
+
+		.list-icons.list-icons_medium.offset-20 
+			.list-icons__icon
+				img(src="images/icons/8.svg", alt="")
+			.list-icons__title Пункт 1
+			.list-icons__icon
+				img(src="images/icons/9.svg", alt="")
+			.list-icons__title Пункт 2
+			.list-icons__icon
+				img(src="images/icons/10.svg", alt="")
+			.list-icons__title Пункт 3
+
+
 		//- .s__column.s__column_aside.s__gutter.aside__item
-		//- 	include aside-rec-catalog
-		//- 	.aside__item
-		//- 		a(href="#"): img.image-full(src="images/banner.jpg" width="280" height="460")
+			//- include aside-rec-catalog
+			//- .aside__item
+			//- 	a(href="#"): img.image-full(src="images/banner.jpg" width="280" height="460")
