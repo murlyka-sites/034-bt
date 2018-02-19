@@ -38,7 +38,6 @@
 
 
 .table {
-	margin-bottom 30px
 	width 100%
 	border-collapse separate
 	border-spacing 0
@@ -52,26 +51,6 @@
 	
 	tr:last-child {
 		border-radius 0 0 14px 14px
-	}
-	
-	tr:first-child {
-		td:first-child {
-			border-radius 14px 0 0 0
-		}
-		
-		td:last-child {
-			border-radius 0 14px 0 0
-		}
-	}
-	
-	tr:last-child {
-		td:first-child {
-			border-radius  0 0  0 14px
-		}
-		
-		td:last-child {
-			border-radius 0 0 14px 0 
-		}
 	}
 
 	td {
@@ -88,6 +67,28 @@
 	
 	tr:last-child {
 		border-bottom 1px solid #F2F2F2
+	}
+	
+	&_round {
+		tr:first-child {
+			td:first-child {
+				border-radius 14px 0 0 0
+			}
+			
+			td:last-child {
+				border-radius 0 14px 0 0
+			}
+		}
+	
+		tr:last-child {
+			td:first-child {
+				border-radius  0 0  0 14px
+			}
+			
+			td:last-child {
+				border-radius 0 0 14px 0 
+			}
+		}
 	}
 }
 

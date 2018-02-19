@@ -1,18 +1,19 @@
 .s-card
 	.s-card__container
-		.clearfix
-			.s__title.s-card__title.text-left Шиномонтажный стенд C601 (380V)
-			.s-card__slider.slider-card
-				.slider-card__header: .swiper-container.slider-card__prs
-					.swiper-wrapper
-						.slider-card__pr: a.c-gallery(href="images/card/1.jpg" data-fancybox="card"): img.fully-img(src="images/card/1.jpg" width="580" heihgt="388" alt="Фото 1")
-						.slider-card__pr: a.c-gallery(href="images/card/2.jpg" data-fancybox="card"): img.fully-img(src="images/card/2.jpg" width="580" heihgt="388" alt="Фото 2")
-						.slider-card__pr: a.c-gallery(href="images/card/3.jpg" data-fancybox="card"): img.fully-img(src="images/card/3.jpg" width="580" heihgt="388" alt="Фото 3")
-				.swiper-container.slider-card__thumbs
-					.swiper-wrapper
-						.slider-card__thumb.slider-card__thumb_active: img.fully-img(src="images/card/1.jpg" width="180" heihgt="129" alt="Фото 1")
-						.slider-card__thumb: img.fully-img(src="images/card/2.jpg" width="180" heihgt="129" alt="Фото 2")
-						.slider-card__thumb: img.fully-img(src="images/card/3.jpg" width="180" heihgt="129" alt="Фото 3")
+		.s-card__main
+			div
+				.s__title.s-card__title.text-left Шиномонтажный стенд C601 (380V)
+				.s-card__slider.slider-card
+					.slider-card__header: .swiper-container.slider-card__prs
+						.swiper-wrapper
+							.slider-card__pr: a.c-gallery(href="images/card/1.jpg" data-fancybox="card"): img.fully-img(src="images/card/1.jpg" width="580" heihgt="388" alt="Фото 1")
+							.slider-card__pr: a.c-gallery(href="images/card/2.jpg" data-fancybox="card"): img.fully-img(src="images/card/2.jpg" width="580" heihgt="388" alt="Фото 2")
+							.slider-card__pr: a.c-gallery(href="images/card/3.jpg" data-fancybox="card"): img.fully-img(src="images/card/3.jpg" width="580" heihgt="388" alt="Фото 3")
+					.swiper-container.slider-card__thumbs
+						.swiper-wrapper
+							.slider-card__thumb.slider-card__thumb_active: img.fully-img(src="images/card/1.jpg" width="180" heihgt="129" alt="Фото 1")
+							.slider-card__thumb: img.fully-img(src="images/card/2.jpg" width="180" heihgt="129" alt="Фото 2")
+							.slider-card__thumb: img.fully-img(src="images/card/3.jpg" width="180" heihgt="129" alt="Фото 3")
 			.s-card__body
 				.s-card__price.hub-card-price.text-asphalt
 					.hub-card-price__label цена
@@ -42,57 +43,3 @@
 					.hub-chars__value.text-midnight 1 шт
 			
 		p.p-13.s-card__p.text-dark-gray Предназначен для монтажа и демонтажа колес легковых автомобилей, мотоциклов и легких грузовиков с диаметром обода до 21 дюйма (535 мм) и шириной до 13 дюймов (330 мм). Надежный и неприхотливый станок в традиционном исполнении. Прочная и безопасная конструкия обеспечивает долговременную безотказную работу станка. Поворотная консоль позволяет устанавливать шиномонтажный станок непосредственно у стены, давая возможность экономить рабочее пространство. Рабочий стол с самоцентрнирующимся 4-х кулачковым патроном и двумя силовыми пневмоцилиндрами вращается в обе стороны. Мощный отжимающий пневмоцилиндр и лопатка со специальным профилем позволяют быстро и бережно произвести демонтаж. Монтажная головка выставляется относительно обода по высоте и по горизонтали. Её форма подходит для всех видов шин. В блок подготовки воздуха входят: фильтр, влагоотделитель, регулятор давления, манометр, лубрикатор. В качестве опций доступны пластиковые накладки на монтажную голловку и кулачки.
-
-.s-chars
-	.s__container.s-chars__container
-		.s__gutter.s-chars__column.s-chars__column_main
-			.s-chars__tabs
-				ul.tabs-chars
-					li.tabs-chars__button.tabs-chars__button_active Технические
-						br
-						| характеристики
-					li.tabs-chars__button Комплект
-						br
-						| поставки
-					li.tabs-chars__button Транспортировочные 
-						br
-						| характеристики
-			.s-chars__contents
-				.s-chars__content
-					table.table
-						tr.tr
-							td.td Диаметр зажима изнутри, дюйм
-							td.td 14-26
-						tr.tr
-							td.td Диапазон зажима снаружи, дюйм
-							td.td 12-23
-						tr.tr
-							td.td Ширина обода, дюйм
-							td.td 16
-						tr.tr
-							td.td Максимальная ширина колеса, дюйм (мм)
-							td.td 17 (430)
-						tr.tr
-							td.td Максимальный диаметр колеса, мм
-							td.td 1143
-						tr.tr
-							td.td Количество скоростей вращения монтажного стола, об/мин
-							td.td 1	
-						tr.tr
-							td.td Габаритные размеры, мм
-							td.td 1830х650х1030
-						tr.tr
-							td.td Диапазон отжима, мм
-							td.td 60-440
-				.s-chars__content.hidden 2
-				.s-chars__content.hidden 3
-			.s-chars__title.s__title ДОПОЛНИТЕЛЬНЫЕ
-				br
-				| МАТЕРИАЛЫ:
-			a.a.s-chars__attach.hub-attach(href="#")
-				svg.hub-attach__icon.icon(src="images/icons/doc.svg" width="13" height="16" alt="document" role="presentation"): use(xlink:href="#doc")
-				.hub-attach__text Коммерческое предложение станок шиномонтажный RTC-602 (Размер: 298.67 KB)
-		.s__gutter.s-chars__column.s-chars__column_aside
-			.s-chars__aside
-				//- include aside-rec-catalog
-				

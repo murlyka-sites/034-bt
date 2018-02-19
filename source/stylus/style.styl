@@ -529,69 +529,6 @@
 	}
 }
 
-.c-catalog {
-	background white
-	padding 20px
-	border 1px solid #E8E8E8
-	border-radius 15px
-	overflow hidden
-	
-	&__header {
-		padding 10px 
-	}
-	
-	&__body {
-		padding 10px 0
-		text-align center
-		padding-bottom 10px 
-		
-	}
-	
-	&__title {
-		margin 0 -5px 10px
-		color #4D4D54
-		font-size 15px 
-		line-height 1.3
-		
-		&-inner {
-			color inherit
-			text-decoration none
-			line-clamp(2, 15px * 1.3)
-			
-			&:hover {
-				text-decoration underline dashed
-			}
-		}
-	}
-	
-	&__chars {
-		display flex
-		align-items center
-		justify-content center
-		height 66px
-		color #828282
-		margin-bottom 10px		
-		font-size 12px
-		line-height 1.33 
-		
-		&-inner {
-			line-clamp(4, 15px * 1.3)
-		}
-	}
-	
-	&__pr {
-		display block
-		margin auto
-	}
-	
-	&__foo {
-		text-align center
-		padding 15px 0 5px 
-		border-top 1px solid #1E1A08
-		font-weight 700 
-		color $color-midnight
-	}
-}
 
 .s-info {
 	background: linear-gradient(180deg, rgba(254, 237, 0, 0.5) 0%, rgba(249, 217, 74, 0.5) 100%), linear-gradient(0deg, rgba(254, 237, 0, 0.9), rgba(254, 237, 0, 0.9)), url(photo-1504438190342-5951e134ffee.jpg);
@@ -682,6 +619,14 @@
 	
 	&__nav {
 		margin-bottom 30px 
+	}
+}
+
+.aside-rec {
+	&__title {
+		margin-bottom 10px 
+		font-size 16px 
+		color #4D4D54
 	}
 }
 
@@ -1128,10 +1073,20 @@
 		container()
 	}
 	
+	&__main {
+		@media (min-width 992px) {
+			display grid
+			grid-gap 40px
+			grid-template-columns 580px auto
+		}
+	}
+	
+	&__body {
+		margin-bottom 15px
+	}
+	
 	&__slider {
-		float left
-		width 580px
-		margin 0 40px 20px 0 
+		margin-bottom 15px
 	}
 	
 	&__title {
@@ -1285,7 +1240,6 @@
 	grid-template-columns auto auto
 	grid-gap 10px
 	
-	
 	&__key {
 		
 	}
@@ -1294,6 +1248,102 @@
 		
 	}
 }
+
+.s-chars {
+	&__container {
+		padding 20px
+		
+		@media (min-width 992px) {
+			display grid
+			grid-template-columns auto  265px
+			grid-gap 20px
+		}
+		
+		container()
+	}
+	
+	&__column {
+		margin-bottom 20px 
+	}
+}
+
+.nav-tabs {
+	margin 0
+	padding 0
+	list-style-type none
+	display none
+
+	@media (min-width 768px) {
+		display flex
+	}
+
+	&__button {
+		padding 17px 20px  13px
+		border 1px solid #F2F2F2
+		border-bottom none
+		border-radius 5px 5px 0 0
+		color #36363B
+		cursor pointer
+
+
+		@media (min-width 600) {
+			border-radius 5px 5px 0 0
+		}
+		
+		&_active {
+			border-radius 0
+			font-weight 700 
+		}
+
+		&_active,
+		&:hover {
+			border-color transparent
+			background linear-gradient(180deg, rgba(249, 217, 74, 0.5) 66.42%, rgba(224, 183, 0, 0.5) 100%), #F9D94A
+			color $color-dark-brown
+		}
+	}
+}
+
+.accordion {
+	&__button {
+		padding 17px 20px  13px
+		border 1px solid #F2F2F2
+		border-bottom none
+		border-radius 0
+		color #36363B
+		cursor pointer
+		background linear-gradient(180deg, rgba(249, 217, 74, 0.5) 66.42%, rgba(224, 183, 0, 0.5) 100%), #F9D94A
+		
+		@media (min-width 768px) {
+			display none
+		}
+		
+		&_active {
+			font-weight 700
+			color $color-dark-brown 
+		}
+		
+		&:first-child {
+			border-radius 5px 5px 0 0
+		}
+	}
+	
+	&__body {
+		border 1px solid #F2F2F2
+		border-top none
+		border-bottom none
+		
+		@media (min-width 768px) {
+			border-top 1px solid #F2F2F2 
+		}
+		
+		&:last-child {
+			border-bottom 1px solid #F2F2F2
+		}
+	}
+}
+
+
 
 .a {
 	text-decoration none
@@ -1304,6 +1354,119 @@
 		text-decoration-style dashed
 	}
 }
+
+.c-catalog {
+	background white
+	padding 20px
+	border 1px solid #E8E8E8
+	border-radius 15px
+	overflow hidden
+	
+	&_tile {		
+		@media (min-width 768px) {
+			display grid
+			align-items stretch
+			padding 20px 25px 10px 0
+			grid-template-columns 265px auto 180px
+		}
+	}
+	
+	&__header {
+		padding 10px
+	}
+	
+	&__body {
+		padding 10px 0
+		text-align center
+		padding-bottom 10px 
+		
+		&_tile {
+			@media (min-width 768px) {
+				padding 20px 0 0
+			}
+		}
+		
+	}
+	
+	&__title {
+		margin 0 -5px 10px
+		color #4D4D54
+		font-size 15px 
+		line-height 1.3
+		
+		&_tile {
+			@media (min-width 768px) {
+				text-align left
+			}
+		}
+		
+		&-inner {
+			color inherit
+			text-decoration none
+			line-clamp(2, 15px * 1.3)
+			width 100%
+			
+			&:hover {
+				text-decoration underline dashed
+			}
+		}
+	}
+	
+	&__chars {
+		display flex
+		align-items center
+		justify-content center
+		height 66px
+		color #828282
+		margin-bottom 10px		
+		font-size 12px
+		line-height 1.33 
+		
+		&_tile {
+			@media (min-width 768px) {
+				text-align left
+			}
+		}
+		
+		&-inner {
+			width 100%
+			line-clamp(4, 15px * 1.3)
+		}
+	}
+	
+	&__pr {
+		display block
+		margin auto
+	}
+	
+	&__foo {
+		text-align center
+		padding 15px 0 5px 
+		border-top 1px solid #1E1A08
+		font-weight 700 
+		color $color-midnight
+		
+		&_tile {
+			@media (min-width 768px) {
+				display grid
+				align-items center
+				justify-content center
+				border none
+			}
+		}
+	}
+	
+	&__button {
+		display none
+		
+		&_tile {
+			@media (min-width 768px) {
+				display block
+			}
+		}
+	}
+}
+
 /*
 .button {
 	display inline-flex

@@ -9,7 +9,7 @@
     <meta content="telephone=no" name="format-detection">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&amp;amp;subset=cyrillic">
-    <link rel="stylesheet" href="css/style.css?ts=1519029986606">
+    <link rel="stylesheet" href="css/style.css?ts=1519047226751">
   </head>
   <body class="page">
     <svg width="0" height="0" hidden version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -630,23 +630,25 @@
       </div>
       <div class="s-card">
         <div class="s-card__container">
-          <div class="clearfix">
-            <div class="s__title s-card__title text-left">Шиномонтажный стенд C601 (380V)</div>
-            <div class="s-card__slider slider-card">
-              <div class="slider-card__header">
-                <div class="swiper-container slider-card__prs">
-                  <div class="swiper-wrapper">
-                    <div class="slider-card__pr"><a class="c-gallery" href="images/card/1.jpg" data-fancybox="card"><img class="fully-img" src="images/card/1.jpg" width="580" heihgt="388" alt="Фото 1"></a></div>
-                    <div class="slider-card__pr"><a class="c-gallery" href="images/card/2.jpg" data-fancybox="card"><img class="fully-img" src="images/card/2.jpg" width="580" heihgt="388" alt="Фото 2"></a></div>
-                    <div class="slider-card__pr"><a class="c-gallery" href="images/card/3.jpg" data-fancybox="card"><img class="fully-img" src="images/card/3.jpg" width="580" heihgt="388" alt="Фото 3"></a></div>
+          <div class="s-card__main">
+            <div>
+              <div class="s__title s-card__title text-left">Шиномонтажный стенд C601 (380V)</div>
+              <div class="s-card__slider slider-card">
+                <div class="slider-card__header">
+                  <div class="swiper-container slider-card__prs">
+                    <div class="swiper-wrapper">
+                      <div class="slider-card__pr"><a class="c-gallery" href="images/card/1.jpg" data-fancybox="card"><img class="fully-img" src="images/card/1.jpg" width="580" heihgt="388" alt="Фото 1"></a></div>
+                      <div class="slider-card__pr"><a class="c-gallery" href="images/card/2.jpg" data-fancybox="card"><img class="fully-img" src="images/card/2.jpg" width="580" heihgt="388" alt="Фото 2"></a></div>
+                      <div class="slider-card__pr"><a class="c-gallery" href="images/card/3.jpg" data-fancybox="card"><img class="fully-img" src="images/card/3.jpg" width="580" heihgt="388" alt="Фото 3"></a></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-container slider-card__thumbs">
-                <div class="swiper-wrapper">
-                  <div class="slider-card__thumb slider-card__thumb_active"><img class="fully-img" src="images/card/1.jpg" width="180" heihgt="129" alt="Фото 1"></div>
-                  <div class="slider-card__thumb"><img class="fully-img" src="images/card/2.jpg" width="180" heihgt="129" alt="Фото 2"></div>
-                  <div class="slider-card__thumb"><img class="fully-img" src="images/card/3.jpg" width="180" heihgt="129" alt="Фото 3"></div>
+                <div class="swiper-container slider-card__thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="slider-card__thumb slider-card__thumb_active"><img class="fully-img" src="images/card/1.jpg" width="180" heihgt="129" alt="Фото 1"></div>
+                    <div class="slider-card__thumb"><img class="fully-img" src="images/card/2.jpg" width="180" heihgt="129" alt="Фото 2"></div>
+                    <div class="slider-card__thumb"><img class="fully-img" src="images/card/3.jpg" width="180" heihgt="129" alt="Фото 3"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -683,66 +685,69 @@
         </div>
       </div>
       <div class="s-chars">
-        <div class="s__container s-chars__container">
-          <div class="s__gutter s-chars__column s-chars__column_main">
+        <div class="s-chars__container">
+          <div class="s-chars__column s-chars__column_main">
             <div class="s-chars__tabs">
-              <ul class="tabs-chars">
-                <li class="tabs-chars__button tabs-chars__button_active">Технические<br>характеристики</li>
-                <li class="tabs-chars__button">Комплект<br>поставки</li>
-                <li class="tabs-chars__button">Транспортировочные <br>характеристики</li>
+              <ul class="nav-tabs">
+                <li class="nav-tabs__button" :class="{'nav-tabs__button_active': hasActiveTab('chars', 1)}" @click="toActiveTab('chars', 1)">Технические<br>характеристики</li>
+                <li class="nav-tabs__button" :class="{'nav-tabs__button_active': hasActiveTab('chars', 2)}" @click="toActiveTab('chars', 2)">Комплект<br>поставки</li>
+                <li class="nav-tabs__button" :class="{'nav-tabs__button_active': hasActiveTab('chars', 3)}" @click="toActiveTab('chars', 3)">Транспортировочные <br>характеристики</li>
               </ul>
             </div>
             <div class="s-chars__contents">
-              <div class="s-chars__content">
-                <table class="table">
-                  <tr class="tr">
-                    <td class="td">Диаметр зажима изнутри, дюйм</td>
-                    <td class="td">14-26</td>
-                  </tr>
-                  <tr class="tr">
-                    <td class="td">Диапазон зажима снаружи, дюйм</td>
-                    <td class="td">12-23</td>
-                  </tr>
-                  <tr class="tr">
-                    <td class="td">Ширина обода, дюйм</td>
-                    <td class="td">16</td>
-                  </tr>
-                  <tr class="tr">
-                    <td class="td">Максимальная ширина колеса, дюйм (мм)</td>
-                    <td class="td">17 (430)</td>
-                  </tr>
-                  <tr class="tr">
-                    <td class="td">Максимальный диаметр колеса, мм</td>
-                    <td class="td">1143</td>
-                  </tr>
-                  <tr class="tr">
-                    <td class="td">Количество скоростей вращения монтажного стола, об/мин</td>
-                    <td class="td">1	</td>
-                  </tr>
-                  <tr class="tr">
-                    <td class="td">Габаритные размеры, мм</td>
-                    <td class="td">1830х650х1030</td>
-                  </tr>
-                  <tr class="tr">
-                    <td class="td">Диапазон отжима, мм</td>
-                    <td class="td">60-440</td>
-                  </tr>
-                </table>
+              <div class="accordion">
+                <div class="accordion__button" :class="{'accordion__button_active': hasActiveTab('chars', 1)}" @click="toActiveTab('chars', 1)"> Технические<br>характеристики</div>
+                <div class="accordion__body" v-show="hasActiveTab('chars', 1)">
+                  <table class="table">
+                    <tr class="tr">
+                      <td class="td">Диаметр зажима изнутри, дюйм</td>
+                      <td class="td">14-26</td>
+                    </tr>
+                    <tr class="tr">
+                      <td class="td">Диапазон зажима снаружи, дюйм</td>
+                      <td class="td">12-23</td>
+                    </tr>
+                    <tr class="tr">
+                      <td class="td">Ширина обода, дюйм</td>
+                      <td class="td">16</td>
+                    </tr>
+                    <tr class="tr">
+                      <td class="td">Максимальная ширина колеса, дюйм (мм)</td>
+                      <td class="td">17 (430)</td>
+                    </tr>
+                    <tr class="tr">
+                      <td class="td">Максимальный диаметр колеса, мм</td>
+                      <td class="td">1143</td>
+                    </tr>
+                    <tr class="tr">
+                      <td class="td">Количество скоростей вращения монтажного стола, об/мин</td>
+                      <td class="td">1	</td>
+                    </tr>
+                    <tr class="tr">
+                      <td class="td">Габаритные размеры, мм</td>
+                      <td class="td">1830х650х1030</td>
+                    </tr>
+                    <tr class="tr">
+                      <td class="td">Диапазон отжима, мм</td>
+                      <td class="td">60-440</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="accordion__button" :class="{'accordion__button_active': hasActiveTab('chars', 2)}" @click="toActiveTab('chars', 2)">Комплект<br>поставки</div>
+                <div class="accordion__body" v-show="hasActiveTab('chars', 2)">2</div>
+                <div class="accordion__button" :class="{'accordion__button_active': hasActiveTab('chars', 3)}" @click="toActiveTab('chars', 3)">Транспортировочные <br>характеристики</div>
+                <div class="accordion__body" v-show="hasActiveTab('chars', 3)">3</div>
               </div>
-              <div class="s-chars__content hidden">2</div>
-              <div class="s-chars__content hidden">3</div>
             </div>
-            <div class="s-chars__title s__title">ДОПОЛНИТЕЛЬНЫЕ<br>МАТЕРИАЛЫ:</div><a class="a s-chars__attach hub-attach" href="#">
-              <svg class="hub-attach__icon icon" src="images/icons/doc.svg" width="13" height="16" alt="document" role="presentation">
-                <use xlink:href="#doc"></use>
-              </svg>
-              <div class="hub-attach__text">Коммерческое предложение станок шиномонтажный RTC-602 (Размер: 298.67 KB)</div></a>
           </div>
-          <div class="s__gutter s-chars__column s-chars__column_aside">
-            <div class="s-chars__aside"></div>
+          <div class="s-chars__column s-chars__column_aside">
+            <div class="aside-rec">
+              <div class="aside-rec__title">Вам также может <br>понадобиться:</div>
+              <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{tile: app.width &lt; 992}">Материал: Акрил/ПВХ/Композит<br>Размер: 500х600мм</card-catalog>
+            </div>
           </div>
         </div>
-      </div>123
+      </div>
       <div class="s-foo-nav paper-periwinkle">
         <div class="s-foo-nav__container">
           <div class="s-foo-nav__column s-foo-nav__column_logo"><img src="images/logo.svg" alt="" width="178" height="42"></div>

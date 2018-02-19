@@ -1,0 +1,56 @@
+.s-chars
+	.s-chars__container
+		.s-chars__column.s-chars__column_main
+			.s-chars__tabs
+				ul.nav-tabs
+					li.nav-tabs__button(:class="{'nav-tabs__button_active': hasActiveTab('chars', 1)}" @click="toActiveTab('chars', 1)") Технические
+						br
+						| характеристики
+					li.nav-tabs__button(:class="{'nav-tabs__button_active': hasActiveTab('chars', 2)}" @click="toActiveTab('chars', 2)") Комплект
+						br
+						| поставки
+					li.nav-tabs__button(:class="{'nav-tabs__button_active': hasActiveTab('chars', 3)}" @click="toActiveTab('chars', 3)") Транспортировочные 
+						br
+						| характеристики
+			.s-chars__contents
+				.accordion
+					.accordion__button(:class="{'accordion__button_active': hasActiveTab('chars', 1)}" @click="toActiveTab('chars', 1)")  Технические
+						br
+						| характеристики
+					.accordion__body(v-show="hasActiveTab('chars', 1)")
+						table.table
+							tr.tr
+								td.td Диаметр зажима изнутри, дюйм
+								td.td 14-26
+							tr.tr
+								td.td Диапазон зажима снаружи, дюйм
+								td.td 12-23
+							tr.tr
+								td.td Ширина обода, дюйм
+								td.td 16
+							tr.tr
+								td.td Максимальная ширина колеса, дюйм (мм)
+								td.td 17 (430)
+							tr.tr
+								td.td Максимальный диаметр колеса, мм
+								td.td 1143
+							tr.tr
+								td.td Количество скоростей вращения монтажного стола, об/мин
+								td.td 1	
+							tr.tr
+								td.td Габаритные размеры, мм
+								td.td 1830х650х1030
+							tr.tr
+								td.td Диапазон отжима, мм
+								td.td 60-440
+					.accordion__button(:class="{'accordion__button_active': hasActiveTab('chars', 2)}" @click="toActiveTab('chars', 2)") Комплект
+						br
+						| поставки
+					.accordion__body(v-show="hasActiveTab('chars', 2)") 2
+					.accordion__button(:class="{'accordion__button_active': hasActiveTab('chars', 3)}" @click="toActiveTab('chars', 3)") Транспортировочные 
+						br
+						| характеристики
+					.accordion__body(v-show="hasActiveTab('chars', 3)") 3
+		.s-chars__column.s-chars__column_aside
+			include aside-rec
+				
