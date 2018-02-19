@@ -1,0 +1,48 @@
+.s-catalog
+	.s-catalog__container
+		.s-catalog__header.text-center
+			.s-catalog__buttons
+				button.s-catalog__button(:class="{'s-catalog__button_active': !fullList}" @click="fullList = !fullList"): svg.s-catalog__icon(width="18" height="18"): use(xlink:href="#tile")
+				button.s-catalog__button(:class="{'s-catalog__button_active': fullList}" @click="fullList = !fullList"): svg.s-catalog__icon(width="18" height="18"): use(xlink:href="#list")
+			.s-catalog__title.text-uppercase Товары и Оборудование для адаптации
+
+		.grid-catalog-4.offset-15(:class="{'grid-catalog-4_list': fullList}"): each i in [1,2,3,4]
+			.grid-catalog-4__item
+				card-catalog(title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'full-list': fullList, 'list': fullList}" link="#")
+					| Размер: 150х200мм 
+					br
+					| Материал: кнопка влагозащитная (IP44), приемное устройство, 
+					br
+					| табличка композит
+		
+		
+		.s-catalog__header.text-center
+			.s-catalog__buttons
+				button.s-catalog__button(:class="{'s-catalog__button_active': !list}" @click="list = !list"): svg.s-catalog__icon(width="18" height="18"): use(xlink:href="#tile")
+				button.s-catalog__button(:class="{'s-catalog__button_active': list}" @click="list = !list"): svg.s-catalog__icon(width="18" height="18"): use(xlink:href="#list")
+			.s-catalog__title.text-uppercase Товары и Оборудование для адаптации
+		.grid-3-1
+			.grid-3-1__column.offset-15
+				include aside-rec
+			.grid-3-1__column.offset-15
+				.grid-catalog-3(:class="{'grid-catalog-3_list': list}"): each  c in [1,2,3, 1,2,3]
+					.grid-catalog-3__item
+						card-catalog(title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#")
+							| Размер: 150х200мм 
+							br
+							| Материал: кнопка влагозащитная (IP44), приемное устройство, 
+							br
+							| табличка композит
+
+		.grid-1-3
+			.grid-1-3__column.offset-15
+				.grid-catalog-3(:class="{'grid-catalog-3_list': list}"): each  c in [1,2,3, 1,2,3]
+					.grid-catalog-3__item
+						card-catalog(title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#")
+							| Размер: 150х200мм 
+							br
+							| Материал: кнопка влагозащитная (IP44), приемное устройство, 
+							br
+							| табличка композит
+			.grid-1-3__column.offset-15
+				include aside-rec

@@ -131,11 +131,7 @@
 				}];
 			.s-main-catalog__grid: each c in catalog
 				.s-main-catalog__item
-					.c-catalog
-						header.c-catalog__header: a(href="#"): img.c-catalog__pr.image-responsive(src="images/catalog/" + c.id + ".jpg" width="188" height="140")
-						.c-catalog__body
-							.c-catalog__title: a.c-catalog__title-inner(href="#") #{c.title}
-							.c-catalog__chars: .c-catalog__chars-inner !{c.chars}
-						footer.c-catalog__foo #{c.price}
+					card-catalog(title=c.title price=c.price image="images/catalog/"+c.id+".jpg" link="#")
+						| !{c.chars}
 			.s-main-catalog__paper.paper-with-button.--h-175.paper-yellow()
 				button.paper-with-button__button.button.button_type_button.button_round_40.button_size_md.button_theme_black.--w-200.text-uppercase скачать в PDF

@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>GARO</title>
+    <title>Строительные технологии</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta content="telephone=no" name="format-detection">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;amp;subset=cyrillic,cyrillic-ext">
-    <link rel="stylesheet" href="css/style.css?ts=1517035483099">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&amp;amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/style.css?ts=1519054232731">
   </head>
   <body class="page">
     <svg width="0" height="0" hidden version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
+        <symbol id="target" viewBox="0 0 9 12">
+          <path d="M 4.49999 0C 2.01494 0 2.41517e-08 2.01495 2.41517e-08 4.50001C 2.41517e-08 6.98508 3.75003 12 4.50001 12C 5.25001 12 9 6.98508 9 4.50001C 9 2.01495 6.98506 0 4.49999 0ZM 4.49999 7.49999C 2.84546 7.49999 1.50003 6.15378 1.50003 4.50001C 1.50003 2.84624 2.84546 1.49999 4.49999 1.49999C 6.15456 1.49999 7.49995 2.84624 7.49995 4.50001C 7.49995 6.15378 6.15459 7.49999 4.49999 7.49999Z"></path>
+        </symbol>
         <symbol id="exit" viewBox="0 0 9 12">
           <path d="M 7.37686 12L 8.71703 12L 8.71703 9.33203L 7.37686 9.33203L 7.37686 10.6641L 1.34017 10.6641L 1.34017 1.33203L 7.37686 1.33203L 7.37686 2.66406L 8.71703 2.66406L 8.71703 0L 0 0L 0 12L 7.37686 12Z"></path>
           <path transform="translate(2.6, 2.95)" d="M 3.32882 5.96046e-08L 2.43668 0.859375L 3.64323 2.05859L 4.42926 2.38672L -1.19938e-07 2.38672L -1.19938e-07 3.71875L 4.41354 3.71875L 3.61572 4.07031L 2.42882 5.24219L 3.33275 6.09375L 6.39825 3.04687L 3.32882 5.96046e-08Z"></path>
@@ -41,11 +44,11 @@
         <symbol id="burger" viewBox="0 0 30 30">
           <path d="M 3 7 27 7 M 3 15 27 15 M 3 23 27 23" stroke-width="4" stroke-linecap="round"></path>
         </symbol>
-        <symbol id="next" viewBox="0 0 31 31">
-          <path d="M 13.5 11.5 17.8 16.1 13.5 20.5" stroke-width="1.6" fill="none"></path>
+        <symbol id="next" viewBox="0 0 40 40">
+          <path transform="translate(16, 19)" d="M 8.35355 0.353553C 8.54882 0.158291 8.54882 -0.158291 8.35355 -0.353553L 5.17157 -3.53553C 4.97631 -3.7308 4.65973 -3.7308 4.46447 -3.53553C 4.2692 -3.34027 4.2692 -3.02369 4.46447 -2.82843L 7.29289 0L 4.46447 2.82843C 4.2692 3.02369 4.2692 3.34027 4.46447 3.53553C 4.65973 3.7308 4.97631 3.7308 5.17157 3.53553L 8.35355 0.353553ZM 0 0.5L 8 0.5L 8 -0.5L 0 -0.5L 0 0.5Z"></path>
         </symbol>
-        <symbol id="prev" viewBox="0 0 31 31">
-          <path d="M 16.5 11.5 12.2 16.1 16.5 20.5" stroke-width="1.6" fill="none"></path>
+        <symbol id="prev" viewBox="0 0 40 40">
+          <path transform="rotate(180 20 20) translate(16, 20)" d="M 8.35355 0.353553C 8.54882 0.158291 8.54882 -0.158291 8.35355 -0.353553L 5.17157 -3.53553C 4.97631 -3.7308 4.65973 -3.7308 4.46447 -3.53553C 4.2692 -3.34027 4.2692 -3.02369 4.46447 -2.82843L 7.29289 0L 4.46447 2.82843C 4.2692 3.02369 4.2692 3.34027 4.46447 3.53553C 4.65973 3.7308 4.97631 3.7308 5.17157 3.53553L 8.35355 0.353553ZM 0 0.5L 8 0.5L 8 -0.5L 0 -0.5L 0 0.5Z"></path>
         </symbol>
         <symbol id="zoom" viewBox="0 0 16 16">
           <path transform="translate(3.69, 3.65)" d="M 5.84606 2.46154L 3.69221 2.46154L 3.69221 0.307688C 3.69221 0.224333 3.66173 0.152261 3.60087 0.0913363C 3.53995 0.0304117 3.46781 -2.05558e-09 3.38456 -2.05558e-09L 2.76915 -2.05558e-09C 2.68584 -2.05558e-09 2.61373 0.0304117 2.55284 0.0913363C 2.49198 0.152261 2.4615 0.224333 2.4615 0.307688L 2.4615 2.46154L 0.30765 2.46154C 0.22433 2.46154 0.152225 2.49202 0.0913353 2.55287C 0.0304115 2.6138 1.25389e-07 2.68587 1.25389e-07 2.76922L 1.25389e-07 3.38457C 1.25389e-07 3.46792 0.0304115 3.54006 0.0913353 3.60092C 0.152259 3.66184 0.224229 3.69229 0.30765 3.69229L 2.4615 3.69229L 2.4615 5.84617C 2.4615 5.92962 2.49198 6.00163 2.55284 6.06262C 2.61376 6.12338 2.68584 6.15379 2.76915 6.15379L 3.38452 6.15379C 3.46781 6.15379 3.53995 6.12338 3.60084 6.06262C 3.66169 6.00163 3.69217 5.92962 3.69217 5.84617L 3.69217 3.69229L 5.84603 3.69229C 5.92948 3.69229 6.00135 3.66181 6.06248 3.60092C 6.12323 3.54006 6.15351 3.46792 6.15351 3.38457L 6.15351 2.76922C 6.15351 2.68587 6.12323 2.6138 6.06248 2.55287C 6.00162 2.49202 5.92948 2.46154 5.84606 2.46154Z"></path>
@@ -81,962 +84,701 @@
       </defs>
     </svg>
     <div id="app">
-      <header class="s-header s">
-        <div class="s__container s-header__container">
-          <div class="s-header__side s-header__side_logo s__gutter"><img class="s-header__logo" src="images/logo.png" width="179" height="70" alt="Логотип: Группа компаний ГАРО"></div>
-          <div class="s-header__side s-header__side_bar s__gutter">
-            <div class="s-header__user-bar user-bar">
-              <div class="user-bar__group user-bar__group_lang">
-                <div class="user-bar__lang lang-switcher"><span class="lang-switcher__current">рус</span>
-                  <div class="lang-switcher__separator"></div><a class="lang-switcher__item" href="#">eng</a>
-                </div>
-              </div>
-              <div class="user-bar__group">
-                <div class="user-bar__list">
-                  <div class="user-bar__item">
-                    <svg class="user-bar__icon icon" width="12" height="12">
-                      <use xlink:href="#user"></use>
-                    </svg>
-                    <div class="user-bar__text">Константин Константинопольский</div>
-                  </div>
-                  <div class="user-bar__separator"></div>
-                  <div class="user-bar__item">
-                    <svg class="icon user-bar__icon" width="9" height="12">
-                      <use xlink:href="#exit"></use>
-                    </svg>
-                    <div class="user-bar__text">выход</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="s-header__info-bar info-bar"><a class="info-bar__group info-bar__group_hub hub-info-bar text-blue" href="#">
-                <svg class="icon hub-info-bar__icon" width="18" height="16">
-                  <use xlink:href="#compare"></use>
+      <div class="s-top">
+        <div class="s-top__container">
+          <div class="s-top__column s-top__column_address">
+            <div class="s-top__address address text-smoke">
+              <div class="address__icon">
+                <svg class="svg fill-yellow" width="9" height="12">
+                  <use xlink:href="#target"></use>
                 </svg>
-                <div class="hub-info-bar__key text-granite">сравнение:</div>
-                <div class="hub-info-bar__value text-500 text-purple">3 товара</div></a><a class="info-bar__group info-bar__group_hub hub-info-bar text-blue" href="#">
-                <svg class="icon hub-info-bar__icon" width="16" height="16">
-                  <use xlink:href="#busket"></use>
-                </svg>
-                <div class="hub-info-bar__key text-granite">5 товаров на</div>
-                <div class="hub-info-bar__value text-500 text-purple">270,48 ₽</div></a>
-              <div class="info-bar__group info-bar__group_call-me">
-                <div class="call-me"><a class="call-me__phone text-granite text-500" href="tel:88003505353">+8 800 350-53-53</a><a class="w-190 call-me__button button button_theme_purple button_size_md button_icon button_type_link text-uppercase" href="#">
-                    <svg class="button__icon icon" width="16" height="16">
-                      <use xlink:href="#phone"></use>
-                    </svg><span class="button__text">позвонить</span></a></div>
               </div>
+              <div class="address__desc"> <a class="address__link decoration-yellow" href="#">Великий Новгород</a>, ул.Псковская дом 56</div>
             </div>
           </div>
+          <div class="s-top__column s-top__column_phone">
+            <div class="phone">8 (812) 222-05-85</div>
+          </div>
         </div>
-      </header>
-      <nav class="s-nav s">
-        <div class="s__container s-nav__container">
-          <div class="s__gutter s-nav__side s-nav__side_burger">
-            <button class="button button_type_button button_theme_outline-blue s-nav__burger">
+      </div>
+      <div class="s-header">
+        <div class="s-header__container">
+          <div class="s-header__column s-header__column_burger">
+            <button class="button button-burger s-header__burger">
               <svg width="30" height="30">
                 <use xlink:href="#burger"></use>
               </svg>
             </button>
           </div>
-          <div class="s__gutter s-nav__side s-nav__side_drop">
-            <div class="s-nav__drop button button_theme_outline-blue button_size_md button_drop">
-              <div class="button__text">Каталог </div>
-              <svg class="button__union icon" width="8" height="5">
-                <use xlink:href="#union"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="s__gutter s-nav__side s-nav__side_nav nav-main text-blue">
-            <ul class="nav-main__list">
-              <li class="nav-main__item"><a class="nav-main__link" href="#" data-toggle-nav-main>О компании
-                  <svg class="nav-main__union icon" width="8" height="5">
-                    <use xlink:href="#union"></use>
-                  </svg></a>
-                <ul class="nav-main__drop nav-drop hidden">
-                  <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">О компании 1</a></li>
-                  <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">О компании 2222</a></li>
-                  <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">О компании 3333333</a></li>
-                </ul>
-              </li>
-              <li class="nav-main__item"><a class="nav-main__link" href="#" data-toggle-nav-main>Акции
-                  <svg class="nav-main__union icon" width="8" height="5">
-                    <use xlink:href="#union"></use>
-                  </svg></a>
-                <ul class="nav-main__drop nav-drop hidden">
-                  <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">Акция 1</a></li>
-                  <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">Акция 2222</a></li>
-                  <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">Очень очень большая акция 3333333</a></li>
-                </ul>
-              </li>
-              <li class="nav-main__item"><a class="nav-main__link" href="#">Новости</a></li>
-              <li class="nav-main__item"><a class="nav-main__link" href="#">Вопросы</a></li>
-              <li class="nav-main__item"><a class="nav-main__link" href="#">Отзывы</a></li>
-              <li class="nav-main__item"><a class="nav-main__link nav-main__link_active" href="#">Магазин</a></li>
-              <li class="nav-main__item"><a class="nav-main__link" href="#">Учебный центр</a></li>
-              <li class="nav-main__item"><a class="nav-main__link" href="#">Контакты</a></li>
-              <li class="nav-main__item nav-main__more-item nav-main__item-drop hidden">
-                <div class="nav-main__link nav-main__button button button_theme_outline-blue button_size_md button_drop" data-toggle-nav-main><span class="button__text">Ещё</span>
-                  <svg class="nav-main__union icon" width="8" height="5">
-                    <use xlink:href="#union"></use>
-                  </svg>
-                </div>
-                <ul class="nav-main__more nav-drop nav-main__drop hidden"></ul>
-              </li>
+          <div class="s-header__column s-header__column_logo"><img class="s-header__logo" src="images/logo.svg" width="178" height="42"></div>
+          <div class="s-header__column s-header__column_nav">
+            <ul class="nav-header">
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Главная</a></li>
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Нормативные документы</a></li>
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Фото</a></li>
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Отзывы</a></li>
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Контакты</a></li>
             </ul>
           </div>
-          <div class="s__gutter s-nav__side s-nav__side_search w-250">
-            <div class="search-nav text-blue">
-              <svg class="search-nav__icon icon" width="12" height="12">
-                <use xlink:href="#loupe"></use>
-              </svg>
-              <input class="search-nav__field">
-              <button class="text-uppercase text-500 search-nav__button">найти</button>
-            </div>
-          </div>
-        </div>
-        <div class="s-nav-drop s-nav-drop_top">
-          <div class="s__container s-nav-drop__container">
-            <div class="s-nav-drop__card">
-              <div class="c-nav-drop">
-                <div class="c-nav-drop__title text-purple text-500">Проверка технического состояния АТС</div>
-                <div class="c-nav-drop__body">
-                  <div class="c-nav-drop__column c-nav-drop__column_pr"><img class="c-nav-drop__pr" src="images/nav-drop/1.jpg"></div>
-                  <div class="c-nav-drop__column c-nav-drop__column_list">
-                    <ul class="c-nav-drop__list">
-                      <li class="c-nav-drop__item"><a class="a" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Опции для тормозных стендов</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Другие</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="s-nav-drop__card">
-              <div class="c-nav-drop">
-                <div class="c-nav-drop__title text-purple text-500">Контроль, диагностика, регулировка</div>
-                <div class="c-nav-drop__body">
-                  <div class="c-nav-drop__column c-nav-drop__column_pr"><img class="c-nav-drop__pr" src="images/nav-drop/2.jpg"></div>
-                  <div class="c-nav-drop__column c-nav-drop__column_list">
-                    <ul class="c-nav-drop__list">
-                      <li class="c-nav-drop__item"><a class="a" href="#">Оборудование для диагностики автоэлектрики и электрооборудования</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Диагностика систем автомобиля</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Диагностические сканеры</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Другие</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="s-nav-drop__card">
-              <div class="c-nav-drop">
-                <div class="c-nav-drop__title text-purple text-500">Подъемное оборудование</div>
-                <div class="c-nav-drop__body">
-                  <div class="c-nav-drop__column c-nav-drop__column_pr"><img class="c-nav-drop__pr" src="images/nav-drop/3.jpg"></div>
-                  <div class="c-nav-drop__column c-nav-drop__column_list">
-                    <ul class="c-nav-drop__list">
-                      <li class="c-nav-drop__item"><a class="a" href="#">Двухстоечные подъемники</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Четырехстоечные подъемники</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Ножничные подъемники</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Другие</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="s-nav-drop__card">
-              <div class="c-nav-drop">
-                <div class="c-nav-drop__title text-purple text-500">Оборудование контроля и регулировки углов установки колёс</div>
-                <div class="c-nav-drop__body">
-                  <div class="c-nav-drop__column c-nav-drop__column_pr"><img class="c-nav-drop__pr" src="images/nav-drop/4.jpg"></div>
-                  <div class="c-nav-drop__column c-nav-drop__column_list">
-                    <ul class="c-nav-drop__list">
-                      <li class="c-nav-drop__item"><a class="a" href="#">Оборудование Hofmann</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Оборудование Техновектор</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Оборудование Josam</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Другие</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="s-nav-drop__card">
-              <div class="c-nav-drop">
-                <div class="c-nav-drop__title text-purple text-500">Шиномонтажное оборудование</div>
-                <div class="c-nav-drop__body">
-                  <div class="c-nav-drop__column c-nav-drop__column_pr"><img class="c-nav-drop__pr" src="images/nav-drop/5.jpg"></div>
-                  <div class="c-nav-drop__column c-nav-drop__column_list">
-                    <ul class="c-nav-drop__list">
-                      <li class="c-nav-drop__item"><a class="a" href="#">Шиномонтажные станки для легковых автомобилей</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Шиномонтажные станки для грузовых автомобилей</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Опции для шиномонтажного оборудования</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Другие</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="s-nav-drop__card">
-              <div class="c-nav-drop">
-                <div class="c-nav-drop__title text-purple text-500">Профессиональное компрессорное оборудование для СТО</div>
-                <div class="c-nav-drop__body">
-                  <div class="c-nav-drop__column c-nav-drop__column_pr"><img class="c-nav-drop__pr" src="images/nav-drop/6.jpg"></div>
-                  <div class="c-nav-drop__column c-nav-drop__column_list">
-                    <ul class="c-nav-drop__list">
-                      <li class="c-nav-drop__item"><a class="a" href="#">Компрессоры винтовые</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Компрессоры поршневые</a></li>
-                      <li class="c-nav-drop__item"><a class="a" href="#">Другие</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div class="s s-breadcrumbs">
-        <div class="s__container">
-          <div class="s__gutter">
-            <ul class="s-breadcrumbs__list">
-              <li class="s-breadcrumbs__item"><a class="s-breadcrumbs__link" href="#">Главная</a></li>
-              <li class="s-breadcrumbs__separator">></li>
-              <li class="s-breadcrumbs__item"><a class="s-breadcrumbs__link" href="#">Продукция</a></li>
-              <li class="s-breadcrumbs__separator">></li>
-              <li class="s-breadcrumbs__item"><a class="s-breadcrumbs__link" href="#">Шиноремонт</a></li>
-              <li class="s-breadcrumbs__separator">></li>
-              <li class="s-breadcrumbs__item"><a class="s-breadcrumbs__link" href="#">Шиномонтажные станки для л/а</a></li>
-              <li class="s-breadcrumbs__separator">></li>
-              <li class="s-breadcrumbs__item">С601(380V)</li>
-            </ul>
+          <div class="s-header__column s-header__column_button">
+            <button class="button button_theme_yellow button_type_button button_size_sm button_round_20 --w-175 text-uppercase">Заказать звонок</button>
           </div>
         </div>
       </div>
-      <div class="s s-catalog">
-        <div class="s__container">
-          <div class="s__gutter">
-            <div class="s__columns">
-              <div class="s__gutter s__column s__column_aside">
-                <div class="aside-filter">
-                  <div class="text-uppercase text-granite aside-filter__title">
-                    <div class="offset-10">Каталог продукции</div>
-                    <div class="aside-separator"></div>
-                  </div>
-                  <div class="offset-20 aside-filter__nav">
-                    <div is="aside-collapse" :open="open">
-                      <div slot="title">Контроль, диагностика, регулировка</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Проверка технического состояния АТС</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Подъемное оборудование</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Проверка технического состояния АТС</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Подъемное оборудование</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Оборудование сход-развал - для регулировки углов установки колес (РУУК)</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Шиноремонт</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Компрессоры</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Очистка, смазка, заправка</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Ремонт</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                    <div is="aside-collapse" :open="false">
-                      <div slot="title">Сварочное оборудование</div>
-                      <ul class="aside-nav">
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Стенды тормозные для легковых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link aside-nav__link_active" href="#">Стенды тормозные универсальные для легковых и грузовых автомобилей</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Опции для тормозных стендов</a></li>
-                        <li class="aside-nav__item"><a class="a aside-nav__link" href="#">Линии технического контроля для легковых автомобилей</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="aside-group">
-                    <div class="aside-separator offset-25"></div>
-                    <div class="aside-group__title text-granite">Подъемное оборудование</div>
-                    <div class="aside-group__body">
-                      <label class="offset-20 checkbox">
-                        <div class="checkbox__box">
-                          <input type="checkbox">
-                        </div>
-                        <div class="checkbox__title">Стенды тормозные для легковых автомобилей</div>
-                      </label>
-                      <label class="offset-20 checkbox">
-                        <div class="checkbox__box">
-                          <input type="checkbox" checked>
-                        </div>
-                        <div class="checkbox__title">Стенды тормозные универсальные для легковых и грузовых автомобилей</div>
-                      </label>
-                      <label class="offset-20 checkbox">
-                        <div class="checkbox__box">
-                          <input type="checkbox" disabled>
-                        </div>
-                        <div class="checkbox__title text-telegrays">Опции для тормозных стендов</div>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="aside-group">
-                    <div class="aside-separator offset-25"></div>
-                    <div class="aside-group__title text-granite">Подъемное оборудование</div>
-                    <form class="aside-group__body">
-                      <label class="offset-20 checkbox">
-                        <div class="checkbox__box">
-                          <input type="radio" name="radio">
-                        </div>
-                        <div class="checkbox__title">Стенды тормозные для легковых автомобилей</div>
-                      </label>
-                      <label class="offset-20 checkbox">
-                        <div class="checkbox__box">
-                          <input type="radio" name="radio" checked>
-                        </div>
-                        <div class="checkbox__title">Стенды тормозные универсальные для легковых и грузовых автомобилей</div>
-                      </label>
-                      <label class="offset-20 checkbox">
-                        <div class="checkbox__box">
-                          <input type="radio" name="radio" disabled>
-                        </div>
-                        <div class="checkbox__title text-telegrays">Опции для тормозных стендов</div>
-                      </label>
-                    </form>
-                  </div>
-                  <div class="aside-group">
-                    <div class="aside-separator offset-25"></div>
-                    <div class="aside-group__title text-granite">Цена</div>
-                    <div class="aside-group__body">
-                      <div class="hub-from-to text-asphalt offset-20">
-                        <div class="hub-from-to__column">
-                          <div class="hub-from-to__label">от</div>
-                          <input class="hub-from-to__field hub-from-to__field_from" type="text" value="105">
-                        </div>
-                        <div class="hub-from-to__column">
-                          <div class="hub-from-to__label">До</div>
-                          <input class="hub-from-to__field hub-from-to__field_to" type="text" value="1152">
-                        </div>
-                        <div class="hub-from-to__column">
-                          <div class="hub-from-to__label">тыс. руб.</div>
-                        </div>
-                      </div>
-                      <div class="offset-20">
-                        <input type="range">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="aside-group">
-                    <div class="aside-separator offset-25"></div>
-                    <div class="aside-group__title text-granite">Подъемное оборудование</div>
-                    <div class="aside-group__body">
-                      <div class="offset-20">
-                        <ul class="text-blue aside-list">
-                          <li class="offset-10"><span class="text-granite">Двухстоечные подъемники</span></li>
-                          <li class="offset-10"><span class="text-granite">Четырехстоечные подъемники</span></li>
-                          <li class="offset-10"><span class="text-granite">Ножничные подъемники</span></li>
-                          <li class="offset-10"><span class="text-granite">Подъемники для шиномонтажа</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="aside-group">
-                    <div class="aside-separator offset-25"></div>
-                    <div class="aside-group__body">
-                      <select class="select offset-20">
-                        <option>Выпадающий список</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="aside-group">
-                    <div class="aside-separator offset-25"></div>
-                    <div class="aside-group__body">
-                      <div class="hub-aside-reset offset-25">
-                        <svg class="hub-aside-reset__icon icon text-silver" width="10" height="10">
-                          <use xlink:href="#x"></use>
-                        </svg>
-                        <div class="hub-aside-reset__text">Сбросить фильтр</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="s__column s__column_main s__gutter">
-                <div class="s__title s-catalog__title hub-title offset-30"><span>Стенды тормозные для легковых автомобилей</span>
-                  <div class="s-catalog__side"> 
-                    <div class="hub-catalog-panel">
-                      <svg class="hub-catalog-panel__item icon hub-catalog-panel__item hub-catalog-panel__item_active" width="18" height="18">
-                        <use xlink:href="#tile"></use>
-                      </svg>
-                      <svg class="hub-catalog-panel__item icon hub-catalog-panel__item" width="18" height="18">
-                        <use xlink:href="#tile-list"></use>
-                      </svg>
-                      <svg class="hub-catalog-panel__item icon hub-catalog-panel__item" width="18" height="18">
-                        <use xlink:href="#list"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="g-catalog">
-                  <div class="g-catalog__item g-catalog__item_t g-catalog__item_active">
-                    <div class="g-catalog-t">
-                      <div class="g-catalog-t__card">
-                        <div class="c-catalog c-catalog">
-                          <header class="c-catalog__header"><img class="fully-img c-catalog__pr" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog__ctrl c-catalog__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog__ctrl c-catalog__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></header>
-                          <div class="c-catalog__body">
-                            <div class="c-catalog__caption">
-                              <div class="c-catalog__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                            <div class="c-catalog__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div>
-                          </div>
-                          <footer class="c-catalog__foo"><a class="c-catalog__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog__button button button_type_link button_size_sm button_theme_lime" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a></footer>
-                        </div>
-                      </div>
-                      <div class="g-catalog-t__card">
-                        <div class="c-catalog c-catalog">
-                          <header class="c-catalog__header"><img class="fully-img c-catalog__pr" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog__ctrl c-catalog__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog__ctrl c-catalog__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></header>
-                          <div class="c-catalog__body">
-                            <div class="c-catalog__caption">
-                              <div class="c-catalog__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                            <div class="c-catalog__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div>
-                          </div>
-                          <footer class="c-catalog__foo"><a class="c-catalog__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog__button button button_type_link button_size_sm button_theme_lime" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a></footer>
-                        </div>
-                      </div>
-                      <div class="g-catalog-t__card">
-                        <div class="c-catalog c-catalog">
-                          <header class="c-catalog__header"><img class="fully-img c-catalog__pr" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog__ctrl c-catalog__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog__ctrl c-catalog__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></header>
-                          <div class="c-catalog__body">
-                            <div class="c-catalog__caption">
-                              <div class="c-catalog__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                            <div class="c-catalog__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div>
-                          </div>
-                          <footer class="c-catalog__foo"><a class="c-catalog__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog__button button button_type_link button_size_sm button_theme_lime" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a></footer>
-                        </div>
-                      </div>
-                      <div class="g-catalog-t__card">
-                        <div class="c-catalog c-catalog">
-                          <header class="c-catalog__header"><img class="fully-img c-catalog__pr" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog__ctrl c-catalog__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog__ctrl c-catalog__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></header>
-                          <div class="c-catalog__body">
-                            <div class="c-catalog__caption">
-                              <div class="c-catalog__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                            <div class="c-catalog__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div>
-                          </div>
-                          <footer class="c-catalog__foo"><a class="c-catalog__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog__button button button_type_link button_size_sm button_theme_lime" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a></footer>
-                        </div>
-                      </div>
-                      <div class="g-catalog-t__card">
-                        <div class="c-catalog c-catalog">
-                          <header class="c-catalog__header"><img class="fully-img c-catalog__pr" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog__ctrl c-catalog__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog__ctrl c-catalog__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></header>
-                          <div class="c-catalog__body">
-                            <div class="c-catalog__caption">
-                              <div class="c-catalog__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                            <div class="c-catalog__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div>
-                          </div>
-                          <footer class="c-catalog__foo"><a class="c-catalog__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog__button button button_type_link button_size_sm button_theme_lime" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a></footer>
-                        </div>
-                      </div>
-                      <div class="g-catalog-t__card">
-                        <div class="c-catalog c-catalog">
-                          <header class="c-catalog__header"><img class="fully-img c-catalog__pr" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog__ctrl c-catalog__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog__ctrl c-catalog__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></header>
-                          <div class="c-catalog__body">
-                            <div class="c-catalog__caption">
-                              <div class="c-catalog__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                            <div class="c-catalog__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div>
-                          </div>
-                          <footer class="c-catalog__foo"><a class="c-catalog__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog__button button button_type_link button_size_sm button_theme_lime" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a></footer>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="g-catalog__item">
-                    <div class="g-catalog-tl">
-                      <div class="g-catalog-tl__card">
-                        <div class="c-catalog c-catalog-tl">
-                          <div class="c-catalog-tl__column c-catalog-tl__column_pr"><img class="fully-img" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_body">
-                            <div class="c-catalog-tl__caption">
-                              <div class="c-catalog-tl__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog-tl__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                          </div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_cp">
-                            <div class="offset-15 c-catalog-tl__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div><a class="offset-15 c-catalog-tl__button button button_type_link button_size_sm button_theme_alizarin w-125" href="#">Купить в 1 клик</a><a class="c-catalog-tl__button button button_type_link button_size_sm button_theme_lime w-125" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="g-catalog-tl__card">
-                        <div class="c-catalog c-catalog-tl">
-                          <div class="c-catalog-tl__column c-catalog-tl__column_pr"><img class="fully-img" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_body">
-                            <div class="c-catalog-tl__caption">
-                              <div class="c-catalog-tl__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog-tl__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                          </div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_cp">
-                            <div class="offset-15 c-catalog-tl__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div><a class="offset-15 c-catalog-tl__button button button_type_link button_size_sm button_theme_alizarin w-125" href="#">Купить в 1 клик</a><a class="c-catalog-tl__button button button_type_link button_size_sm button_theme_lime w-125" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="g-catalog-tl__card">
-                        <div class="c-catalog c-catalog-tl">
-                          <div class="c-catalog-tl__column c-catalog-tl__column_pr"><img class="fully-img" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_body">
-                            <div class="c-catalog-tl__caption">
-                              <div class="c-catalog-tl__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog-tl__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                          </div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_cp">
-                            <div class="offset-15 c-catalog-tl__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div><a class="offset-15 c-catalog-tl__button button button_type_link button_size_sm button_theme_alizarin w-125" href="#">Купить в 1 клик</a><a class="c-catalog-tl__button button button_type_link button_size_sm button_theme_lime w-125" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="g-catalog-tl__card">
-                        <div class="c-catalog c-catalog-tl">
-                          <div class="c-catalog-tl__column c-catalog-tl__column_pr"><img class="fully-img" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_body">
-                            <div class="c-catalog-tl__caption">
-                              <div class="c-catalog-tl__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog-tl__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                          </div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_cp">
-                            <div class="offset-15 c-catalog-tl__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div><a class="offset-15 c-catalog-tl__button button button_type_link button_size_sm button_theme_alizarin w-125" href="#">Купить в 1 клик</a><a class="c-catalog-tl__button button button_type_link button_size_sm button_theme_lime w-125" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="g-catalog-tl__card">
-                        <div class="c-catalog c-catalog-tl">
-                          <div class="c-catalog-tl__column c-catalog-tl__column_pr"><img class="fully-img" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_body">
-                            <div class="c-catalog-tl__caption">
-                              <div class="c-catalog-tl__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog-tl__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                          </div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_cp">
-                            <div class="offset-15 c-catalog-tl__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div><a class="offset-15 c-catalog-tl__button button button_type_link button_size_sm button_theme_alizarin w-125" href="#">Купить в 1 клик</a><a class="c-catalog-tl__button button button_type_link button_size_sm button_theme_lime w-125" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="g-catalog-tl__card">
-                        <div class="c-catalog c-catalog-tl">
-                          <div class="c-catalog-tl__column c-catalog-tl__column_pr"><img class="fully-img" src="images/tape-catalog/1.jpg" width="280" height="187" alt="Фото 1"><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_zoom" href="images/tape-catalog/1.jpg" data-fancybox>
-                              <svg class="icon" width="16" height="16">
-                                <use xlink:href="#zoom"></use>
-                              </svg></a><a class="c-catalog-tl__ctrl c-catalog-tl__ctrl_compare" href="#">
-                              <svg class="icon" width="16" height="15">
-                                <use xlink:href="#graph"></use>
-                              </svg></a></div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_body">
-                            <div class="c-catalog-tl__caption">
-                              <div class="c-catalog-tl__title text-500 text-granite">Стенд сход-развал Geoliner 550 Prism KIT</div>
-                              <div class="c-catalog-tl__desc text-300 text-asphalt">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                            </div>
-                          </div>
-                          <div class="c-catalog-tl__column c-catalog-tl__column_cp">
-                            <div class="offset-15 c-catalog-tl__price text-purple text-700">706 920<span class="text-400"> Руб.</span></div><a class="offset-15 c-catalog-tl__button button button_type_link button_size_sm button_theme_alizarin w-125" href="#">Купить в 1 клик</a><a class="c-catalog-tl__button button button_type_link button_size_sm button_theme_lime w-125" href="#">
-                              <svg class="button__icon icon" width="16" height="16">
-                                <use xlink:href="#busket"></use>
-                              </svg>
-                              <div class="button__text">В корзину</div></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="g-catalog__item">
-                    <table class="g-catalog-l">
-                      <tbody>
-                        <tr class="c-catalog-l">
-                          <td class="c-catalog-l__column c-catalog-l__column_pr" width="78"><img class="c-catalog-l__pr" src="images/tape-catalog/1.jpg" width="78" height="52" alt="Фото 1"></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_title">
-                            <div class="c-catalog-l__title">Стенд сход-развал Geoliner 550 Prism KIT...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_desc">
-                            <div class="c-catalog-l__desc">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_price"><span class="c-catalog-l__price text-purple text-700">706 920 <span class="text-400">Руб.</span></span></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_btn">
-                            <div class="c-catalog-l__buttons"><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_lime" href="#">
-                                <svg class="button__icon icon" width="16" height="16">
-                                  <use xlink:href="#busket"></use>
-                                </svg>
-                                <div class="button__text">В корзину</div></a></div>
-                          </td>
-                        </tr>
-                        <tr class="c-catalog-l">
-                          <td class="c-catalog-l__column c-catalog-l__column_pr" width="78"><img class="c-catalog-l__pr" src="images/tape-catalog/1.jpg" width="78" height="52" alt="Фото 1"></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_title">
-                            <div class="c-catalog-l__title">Стенд сход-развал Geoliner 550 Prism KIT...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_desc">
-                            <div class="c-catalog-l__desc">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_price"><span class="c-catalog-l__price text-purple text-700">706 920 <span class="text-400">Руб.</span></span></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_btn">
-                            <div class="c-catalog-l__buttons"><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_lime" href="#">
-                                <svg class="button__icon icon" width="16" height="16">
-                                  <use xlink:href="#busket"></use>
-                                </svg>
-                                <div class="button__text">В корзину</div></a></div>
-                          </td>
-                        </tr>
-                        <tr class="c-catalog-l">
-                          <td class="c-catalog-l__column c-catalog-l__column_pr" width="78"><img class="c-catalog-l__pr" src="images/tape-catalog/1.jpg" width="78" height="52" alt="Фото 1"></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_title">
-                            <div class="c-catalog-l__title">Стенд сход-развал Geoliner 550 Prism KIT...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_desc">
-                            <div class="c-catalog-l__desc">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_price"><span class="c-catalog-l__price text-purple text-700">706 920 <span class="text-400">Руб.</span></span></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_btn">
-                            <div class="c-catalog-l__buttons"><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_lime" href="#">
-                                <svg class="button__icon icon" width="16" height="16">
-                                  <use xlink:href="#busket"></use>
-                                </svg>
-                                <div class="button__text">В корзину</div></a></div>
-                          </td>
-                        </tr>
-                        <tr class="c-catalog-l">
-                          <td class="c-catalog-l__column c-catalog-l__column_pr" width="78"><img class="c-catalog-l__pr" src="images/tape-catalog/1.jpg" width="78" height="52" alt="Фото 1"></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_title">
-                            <div class="c-catalog-l__title">Стенд сход-развал Geoliner 550 Prism KIT...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_desc">
-                            <div class="c-catalog-l__desc">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_price"><span class="c-catalog-l__price text-purple text-700">706 920 <span class="text-400">Руб.</span></span></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_btn">
-                            <div class="c-catalog-l__buttons"><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_lime" href="#">
-                                <svg class="button__icon icon" width="16" height="16">
-                                  <use xlink:href="#busket"></use>
-                                </svg>
-                                <div class="button__text">В корзину</div></a></div>
-                          </td>
-                        </tr>
-                        <tr class="c-catalog-l">
-                          <td class="c-catalog-l__column c-catalog-l__column_pr" width="78"><img class="c-catalog-l__pr" src="images/tape-catalog/1.jpg" width="78" height="52" alt="Фото 1"></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_title">
-                            <div class="c-catalog-l__title">Стенд сход-развал Geoliner 550 Prism KIT...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_desc">
-                            <div class="c-catalog-l__desc">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_price"><span class="c-catalog-l__price text-purple text-700">706 920 <span class="text-400">Руб.</span></span></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_btn">
-                            <div class="c-catalog-l__buttons"><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_lime" href="#">
-                                <svg class="button__icon icon" width="16" height="16">
-                                  <use xlink:href="#busket"></use>
-                                </svg>
-                                <div class="button__text">В корзину</div></a></div>
-                          </td>
-                        </tr>
-                        <tr class="c-catalog-l">
-                          <td class="c-catalog-l__column c-catalog-l__column_pr" width="78"><img class="c-catalog-l__pr" src="images/tape-catalog/1.jpg" width="78" height="52" alt="Фото 1"></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_title">
-                            <div class="c-catalog-l__title">Стенд сход-развал Geoliner 550 Prism KIT...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_desc">
-                            <div class="c-catalog-l__desc">никальный стенд сход-развал (РУУК) л/а, объединяющий CCD и 3D-технологии...</div>
-                          </td>
-                          <td class="c-catalog-l__column c-catalog-l__column_price"><span class="c-catalog-l__price text-purple text-700">706 920 <span class="text-400">Руб.</span></span></td>
-                          <td class="c-catalog-l__column c-catalog-l__column_btn">
-                            <div class="c-catalog-l__buttons"><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_alizarin" href="#">Купить в 1 клик</a><a class="c-catalog-l__button button button_type_link button_size_sm button_theme_lime" href="#">
-                                <svg class="button__icon icon" width="16" height="16">
-                                  <use xlink:href="#busket"></use>
-                                </svg>
-                                <div class="button__text">В корзину</div></a></div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="paper-smoke w-foo">
-        <nav class="s-nav s-nav_foo s">
-          <div class="s__container s-nav__container">
-            <div class="s__gutter s-nav__side s-nav__side_burger">
-              <button class="button button_type_button button_theme_outline-blue s-nav__burger">
-                <svg width="30" height="30">
-                  <use xlink:href="#burger"></use>
+      <div class="s-menu-catalog paper-yellow">
+        <div class="s-menu-catalog__container">
+          <div class="s-menu-catalog__column s-menu-catalog__column_search">
+            <div class="search-top">
+              <input class="search-top__field">
+              <button class="search-top__button">
+                <svg class="search-top__icon" width="16" height="16">
+                  <use xlink:href="#loupe"></use>
                 </svg>
               </button>
             </div>
-            <div class="s__gutter s-nav__side s-nav__side_drop">
-              <div class="s-nav__drop button button_theme_outline-blue button_size_md button_drop">
-                <div class="button__text">Каталог </div>
-                <svg class="button__union icon icon_purple" width="8" height="5">
-                  <use xlink:href="#union"></use>
-                </svg>
+          </div>
+          <div class="s-menu-catalog__column s-menu-catalog__column_buttons">
+            <div class="s-menu-catalog__buttons buttons-menu-catalog">
+              <div class="buttons-menu-catalog__item">
+                <button class="button button_size_xs button_theme_o-black-yellow button_round_5" :class="{'button_state_black': topMenuCatalog == 1}" @click="topMenuCatalog = 1">Каталог</button>
               </div>
-            </div>
-            <div class="s__gutter s-nav__side s-nav__side_nav nav-main text-granite">
-              <ul class="nav-main__list">
-                <li class="nav-main__item"><a class="nav-main__link" href="#" data-toggle-nav-main>О компании
-                    <svg class="nav-main__union icon icon_purple" width="8" height="5">
-                      <use xlink:href="#union"></use>
-                    </svg></a>
-                  <ul class="nav-main__drop nav-drop hidden">
-                    <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">О компании 1</a></li>
-                    <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">О компании 2222</a></li>
-                    <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">О компании 3333333</a></li>
-                  </ul>
-                </li>
-                <li class="nav-main__item"><a class="nav-main__link" href="#" data-toggle-nav-main>Акции
-                    <svg class="nav-main__union icon icon_purple" width="8" height="5">
-                      <use xlink:href="#union"></use>
-                    </svg></a>
-                  <ul class="nav-main__drop nav-drop hidden">
-                    <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">Акция 1</a></li>
-                    <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">Акция 2222</a></li>
-                    <li class="nav-drop__item"><a class="nav-drop__link text-nowrap" href="#">Очень очень большая акция 3333333</a></li>
-                  </ul>
-                </li>
-                <li class="nav-main__item"><a class="nav-main__link" href="#">Новости</a></li>
-                <li class="nav-main__item"><a class="nav-main__link" href="#">Вопросы</a></li>
-                <li class="nav-main__item"><a class="nav-main__link" href="#">Отзывы</a></li>
-                <li class="nav-main__item"><a class="nav-main__link nav-main__link_active" href="#">Магазин</a></li>
-                <li class="nav-main__item"><a class="nav-main__link" href="#">Учебный центр</a></li>
-                <li class="nav-main__item"><a class="nav-main__link" href="#">Контакты</a></li>
-                <li class="nav-main__item nav-main__more-item nav-main__item-drop hidden">
-                  <div class="nav-main__link nav-main__button button button_theme_outline-blue button_size_md button_drop" data-toggle-nav-main><span class="button__text">Ещё</span>
-                    <svg class="nav-main__union icon icon_purple" width="8" height="5">
-                      <use xlink:href="#union"></use>
-                    </svg>
-                  </div>
-                  <ul class="nav-main__more nav-drop nav-main__drop hidden"></ul>
-                </li>
-              </ul>
-            </div>
-            <div class="s__gutter s-nav__side s-nav__side_search w-250">
-              <div class="search-nav text-granite">
-                <svg class="search-nav__icon icon" width="12" height="12">
-                  <use xlink:href="#loupe"></use>
-                </svg>
-                <input class="search-nav__field">
-                <button class="text-uppercase text-500 search-nav__button">найти </button>
+              <div class="buttons-menu-catalog__item">
+                <button class="button button_size_xs button_theme_o-black-yellow button_round_5" :class="{'button_state_black': topMenuCatalog == 2}" @click="topMenuCatalog = 2">Входная группа</button>
+              </div>
+              <div class="buttons-menu-catalog__item">
+                <button class="button button_size_xs button_theme_o-black-yellow button_round_5" :class="{'button_state_black': topMenuCatalog == 3}" @click="topMenuCatalog = 3">Санузел</button>
+              </div>
+              <div class="buttons-menu-catalog__item">
+                <button class="button button_size_xs button_theme_o-black-yellow button_round_5" :class="{'button_state_black': topMenuCatalog == 4}" @click="topMenuCatalog = 4">Пути следований</button>
               </div>
             </div>
           </div>
-        </nav>
-        <footer class="s s-foo">
-          <div class="s__container s-foo__container">
-            <div class="s__gutter s-foo__side s-foo__side_logo"><img class="s-foo__logo" src="images/logo.png" alt="Логотип: Группа компаний ГАРО"></div>
-            <div class="s__gutter s-foo__side s-foo__side_copy">
-              <p class="s-foo__copy">АО «ГАРО-Трейд» осуществляет свою деятельность начиная с 2005 года в составе одного из крупнейших отечественных производственно-коммерческих объединений – Группы Компаний ГАРО - лидера на рынке автосервисного оборудования.</p>
+        </div>
+      </div>
+      <div class="s-top-menu-catalog" v-show="topMenuCatalog != 0">
+        <div class="s-top-menu-catalog__wrap">
+          <button class="s-top-menu-catalog__button s-top-menu-catalog__button_x" @click="topMenuCatalog = 0">
+            <svg class="s-top-menu-catalog__button-icon" width="15" height="15">
+              <use xlink:href="#x"></use>
+            </svg>
+          </button>
+          <button class="s-top-menu-catalog__button s-top-menu-catalog__button_arrow" @click="topMenuCatalog = 0">
+            <svg class="s-top-menu-catalog__button-icon" width="15" height="15">
+              <use class="rotate-180" xlink:href="#union"></use>
+            </svg>
+          </button>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 1">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </footer>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 2">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 3">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 4">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="s-top-menu-catalog__container" v-show="topMenuCatalog == 5">
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Архитектурное проектирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция существующих зданий и сооружений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Техническое заключение конструкций, экспертиза</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный и текущий ремонт помещений любого назначения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Малоэтажное строительство</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Разработка и согласование проектной документации</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж систем электроосвещения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Пусконаладка электрооборудования</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт магазинов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт складов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Реконструкция помещений</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Ремонт и отделка банков</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Отделка офисов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Дизайн-проект</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование и согласование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Капитальный ремонт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж чиллеров и фанкойлов</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж VRF-систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж прецизионных кондиционеров</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">ИНЖЕНЕРНЫЕ СИСТЕМЫ</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Проектирование инженерных систем</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Вентиляция</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Кондиционирование</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж электрических сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Системы водоснабжения</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Видеонаблюдение</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Структурированные кабельные сети (СКС, компьютерные сети)</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">СКУД - Системы контроля и управления доступом</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-top-menu-catalog__item">
+              <div class="top-menu-catalog">
+                <h3 class="top-menu-catalog__title">МОНТАЖ СКС</h3>
+                <ul class="top-menu-catalog__list">
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж локально-вычислительных сетей</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж компьютерной сети</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Монтаж ВОЛС</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование СКС и сертификация</a></li>
+                  <li class="top-menu-catalog__item"><a class="top-menu-catalog__link" href="#">Тестирование ЛВС</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-breadcrumbs">
+        <div class="s-breadcrumbs__container">
+          <ul class="s-breadcrumbs__list">
+            <li class="s-breadcrumbs__item"> <a class="s-breadcrumbs__link" href="#">Главная</a></li>
+            <li class="s-breadcrumbs__item"><a class="s-breadcrumbs__link" href="#">Каталог</a></li>
+            <li class="s-breadcrumbs__item"><span class="s-breadcrumbs__ink">Беспроводная кнопка вызова помощи для инвалидов ДП-1м</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="s-catalog">
+        <div class="s-catalog__container">
+          <div class="s-catalog__header text-center">
+            <div class="s-catalog__buttons">
+              <button class="s-catalog__button" :class="{'s-catalog__button_active': !fullList}" @click="fullList = !fullList">
+                <svg class="s-catalog__icon" width="18" height="18">
+                  <use xlink:href="#tile"></use>
+                </svg>
+              </button>
+              <button class="s-catalog__button" :class="{'s-catalog__button_active': fullList}" @click="fullList = !fullList">
+                <svg class="s-catalog__icon" width="18" height="18">
+                  <use xlink:href="#list"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="s-catalog__title text-uppercase">Товары и Оборудование для адаптации</div>
+          </div>
+          <div class="grid-catalog-4 offset-15" :class="{'grid-catalog-4_list': fullList}">
+            <div class="grid-catalog-4__item">
+              <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'full-list': fullList, 'list': fullList}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+            </div>
+            <div class="grid-catalog-4__item">
+              <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'full-list': fullList, 'list': fullList}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+            </div>
+            <div class="grid-catalog-4__item">
+              <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'full-list': fullList, 'list': fullList}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+            </div>
+            <div class="grid-catalog-4__item">
+              <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'full-list': fullList, 'list': fullList}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+            </div>
+          </div>
+          <div class="s-catalog__header text-center">
+            <div class="s-catalog__buttons">
+              <button class="s-catalog__button" :class="{'s-catalog__button_active': !list}" @click="list = !list">
+                <svg class="s-catalog__icon" width="18" height="18">
+                  <use xlink:href="#tile"></use>
+                </svg>
+              </button>
+              <button class="s-catalog__button" :class="{'s-catalog__button_active': list}" @click="list = !list">
+                <svg class="s-catalog__icon" width="18" height="18">
+                  <use xlink:href="#list"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="s-catalog__title text-uppercase">Товары и Оборудование для адаптации</div>
+          </div>
+          <div class="grid-3-1">
+            <div class="grid-3-1__column offset-15">
+              <div class="aside-rec">
+                <div class="aside-rec__title">Вам также может <br>понадобиться:</div>
+                <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{list: app.width &lt; 992}">Материал: Акрил/ПВХ/Композит<br>Размер: 500х600мм</card-catalog>
+              </div>
+            </div>
+            <div class="grid-3-1__column offset-15">
+              <div class="grid-catalog-3" :class="{'grid-catalog-3_list': list}">
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-1-3">
+            <div class="grid-1-3__column offset-15">
+              <div class="grid-catalog-3" :class="{'grid-catalog-3_list': list}">
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+                <div class="grid-catalog-3__item">
+                  <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{'list': list}" link="#">Размер: 150х200мм <br>Материал: кнопка влагозащитная (IP44), приемное устройство, <br>табличка композит</card-catalog>
+                </div>
+              </div>
+            </div>
+            <div class="grid-1-3__column offset-15">
+              <div class="aside-rec">
+                <div class="aside-rec__title">Вам также может <br>понадобиться:</div>
+                <card-catalog title="Тактильная вывеска с шрифтом Брайля 500х600мм" price="4400.00 ₽" image="images/catalog/6.jpg" :mods="{list: app.width &lt; 992}">Материал: Акрил/ПВХ/Композит<br>Размер: 500х600мм</card-catalog>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-foo-nav paper-periwinkle">
+        <div class="s-foo-nav__container">
+          <div class="s-foo-nav__column s-foo-nav__column_logo"><img src="images/logo.svg" alt="" width="178" height="42"></div>
+          <div class="s-foo-nav__column s-foo-nav__column_nav">
+            <ul class="nav-header">
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Главная</a></li>
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Нормативные документы</a></li>
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Фото</a></li>
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Отзывы</a></li>
+              <li class="nav-header__item"><a class="nav-header__link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="s-foo-nav__column s-foo-nav__column_contact">
+            <div class="address">
+              <div class="address__icon">
+                <svg class="svg" width="9" height="12">
+                  <use xlink:href="#target"></use>
+                </svg>
+              </div>
+              <div class="address__desc"> <a class="address__link decoration-midnight" href="#">Великий Новгород</a>, ул.Псковская дом 56</div>
+            </div>
+            <div class="phone">8 (812) 222-05-85</div>
+          </div>
+        </div>
+      </div>
+      <div class="s-map-of-services">
+        <div class="s-map-of-services__container">
+          <div class="s-map-of-services__item"><a class="s-map-of-services__link text-uppercase" href="#">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</a></div>
+          <div class="s-map-of-services__item"><a class="s-map-of-services__link text-uppercase" href="#">РЕМОНТ КОММЕРЧЕСКИХ ПОМЕЩЕНИЙ</a></div>
+          <div class="s-map-of-services__item"><a class="s-map-of-services__link text-uppercase" href="#">ИНЖЕНЕРНЫЕ СИСТЕМЫ</a></div>
+          <div class="s-map-of-services__item"><a class="s-map-of-services__link text-uppercase" href="#">МОНТАЖ СИСТЕМ ВЕНТИЛЯЦИИ</a></div>
+          <div class="s-map-of-services__item"><a class="s-map-of-services__link text-uppercase" href="#">МОНТАЖ СИСТЕМ КОНДИЦИОНИРОВАНИЯ</a></div>
+          <div class="s-map-of-services__item"><a class="s-map-of-services__link text-uppercase" href="#">МОНТАЖ СКС</a></div>
+          <div class="s-map-of-services__item"><a class="s-map-of-services__link text-uppercase" href="#">МОНТАЖ СИСТЕМ ЭЛЕКТРОСНАБЖЕНИЯ</a></div>
+        </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-    <script src="js/flat.menu.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/css/ion.rangeSlider.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.2.0/js/ion.rangeSlider.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

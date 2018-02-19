@@ -485,7 +485,76 @@
 		
 		@media (min-width 992px) {
 			grid-template-columns 1fr 1fr 1fr
+			grid-gap 25px 20px
+		}
+	}
+}
+
+.grid-catalog-3 {
+	display grid
+	grid-template-columns 1fr
+	grid-gap 10px
+	
+	@media (min-width 500px) {
+		grid-template-columns 1fr 1fr
+	}
+	
+	@media (min-width 768px) {
+		grid-template-columns 1fr 1fr 1fr
 		grid-gap 25px 20px
+	}
+	
+	@media (min-width 992px) {
+		grid-template-columns 1fr 1fr 1fr
+		grid-gap 25px 20px
+	}
+	
+	&_list {
+		@media (min-width 768px) {
+			grid-template-columns 100%
+		}
+	}
+}
+
+.grid-3-1 {
+	@media (min-width 992px) {
+		display grid
+		align-items flex-start
+		grid-gap 20px
+		grid-template-columns 265px auto
+	}
+}
+
+.grid-1-3 {
+	@media (min-width 992px) {
+		display grid
+		align-items flex-start
+		grid-gap 20px
+		grid-template-columns auto 265px
+	}
+}
+
+.grid-catalog-4 {
+	display grid
+	grid-template-columns 1fr
+	grid-gap 10px
+	
+	@media (min-width 500px) {
+		grid-template-columns 1fr 1fr
+	}
+	
+	@media (min-width 768px) {
+	}
+	
+	@media (min-width 992px) {
+		grid-template-columns 1fr 1fr 1fr 1fr
+		grid-gap 25px 20px
+	}
+	
+	&_list {
+		
+		@media (min-width 768px) {
+			grid-template-columns 100%
 		}
 	}
 }
@@ -1362,7 +1431,16 @@
 	border-radius 15px
 	overflow hidden
 	
-	&_tile {		
+	&_list {		
+		@media (min-width 768px) {
+			display grid
+			align-items stretch
+			padding 20px 25px 10px 0
+			grid-template-columns 265px auto 180px
+		}
+	}
+	
+	&_full-list {
 		@media (min-width 768px) {
 			display grid
 			align-items stretch
@@ -1380,7 +1458,7 @@
 		text-align center
 		padding-bottom 10px 
 		
-		&_tile {
+		&_list {
 			@media (min-width 768px) {
 				padding 20px 0 0
 			}
@@ -1394,7 +1472,7 @@
 		font-size 15px 
 		line-height 1.3
 		
-		&_tile {
+		&_list {
 			@media (min-width 768px) {
 				text-align left
 			}
@@ -1422,7 +1500,7 @@
 		font-size 12px
 		line-height 1.33 
 		
-		&_tile {
+		&_list {
 			@media (min-width 768px) {
 				text-align left
 			}
@@ -1446,7 +1524,7 @@
 		font-weight 700 
 		color $color-midnight
 		
-		&_tile {
+		&_list {
 			@media (min-width 768px) {
 				display grid
 				align-items center
@@ -1459,12 +1537,72 @@
 	&__button {
 		display none
 		
-		&_tile {
+		&_list {
 			@media (min-width 768px) {
 				display block
 			}
 		}
 	}
+}
+
+.s-catalog {
+	&__container {
+		container()
+	}
+	
+	&__header {
+		margin-bottom 30px
+		display grid
+		grid-template-columns 100%
+		
+		@media (min-width 480px) {
+			display grid
+			grid-gap 10px
+			grid-template-columns 48px auto
+		}
+	}
+	
+	&__buttons {
+		display grid
+		order 1
+		grid-template-columns 18px 18px
+		grid-gap 12px
+		
+		@media (min-width 480px) {
+			display inline-grid
+			order 0
+		}
+	}
+	
+	&__button {
+		background transparent
+		border none
+		padding 0
+		fill #C4C4C4
+		cursor pointer
+		
+		&:hover,
+		&_active {
+			fill #4D4D54
+		}
+	}
+	
+	&__title {
+		font-size 20px 
+		
+		@media (min-width 768px) {
+			font-size 30px
+		}
+	}
+	
+	&__icon {
+		display block
+	}
+}
+
+.grid-catalog {
+	display grid
+	grid-gap 10px
 }
 
 /*

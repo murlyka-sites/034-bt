@@ -1,6 +1,8 @@
 let app = {
 	width: screen.width
-}
+};
+
+let sjiz
 
 
 window.addEventListener('resize', function(event){
@@ -71,14 +73,9 @@ let vm = new Vue({
 		asideMenuCatalog: false,
 		tabs: {
 			chars: (screen.width < 768) ? 0 : 1,
-		}
-	},
-	computed: {
-		asideCardCatalogMods: function () {
-			return {
-				'tile': (this.width <= 992)
-			}
-		}
+		},
+		fullList: false,
+		list: true
 	},
 	methods: {
 		hasActiveTab: function(name, id) {
